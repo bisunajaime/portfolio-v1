@@ -15,7 +15,6 @@ function ProjectPage(props) {
     let { id } = useParams()
     let { title, description, urls, images } = props.data[id]
     let history = useHistory()
-    console.log(images)
     const sliderOptions = {
         pageDots: true,
         cellAlign: 'center',
@@ -28,9 +27,6 @@ function ProjectPage(props) {
         imagesLoaded: true,
         lazyLoad: true
     }
-    images.forEach(image => {
-        console.log(image)
-    })
     const baseURL = `../../assets/images/${id}/`
     return (
         <section className="showcase">

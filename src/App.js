@@ -12,6 +12,7 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
+  Redirect,
   Link,
   useParams,
   useHistory
@@ -27,6 +28,7 @@ function App() {
         <Route path="/project/:id">
           <ProjectPage data={projects} />
         </Route>
+        <Redirect to='/' />
       </Switch>
     </Router>
   );
@@ -46,8 +48,8 @@ function Home() {
 
 function Menu() {
   return (
-    <div class="menu_items_mobile closed" id="menu_items_mobile">
-      <a href="#home" class="active">Home</a>
+    <div className="menu_items_mobile closed" id="menu_items_mobile">
+      <a href="#home" className="active">Home</a>
       <a href="#hobbies">Hobbies</a>
       <a href="#projects">Projects</a>
       <a href="#resume">Resume</a>

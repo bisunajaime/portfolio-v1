@@ -31,6 +31,9 @@ function ProjectsList() {
         cellAlign: 'center',
         contain: true,
         wrapAround: true,
+        setGallerySize: false,
+        imagesLoaded: true,
+        lazyLoad: true
     }
     return <Flickity
         className="projects_list"
