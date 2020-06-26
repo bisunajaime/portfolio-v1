@@ -719,9 +719,9 @@ nav {
 
                 a {
                     display: inline-block;
-                    width: 100%;
                     text-decoration: none;
                     font-size: 0.8em;
+                    width: 100%;
                     font-weight: bold;
                     padding: 0.5em 0;
                     text-align: center;
@@ -733,7 +733,7 @@ nav {
                 background: #ffd98d;
 
                 a {
-                    background: #ffd98d;
+                    color: #ffd98d;
                 }
             }
 
@@ -741,16 +741,15 @@ nav {
                 background: #bfa1ff;
 
                 a {
-                    background: #bfa1ff;
+                    color: #bfa1ff;
                 }
             }
 
             &.covidtracker {
-                background: #6e89ff;
+                background: #c3daff;
 
                 a {
-                    color: black;
-                    background: #6e89ff;
+                    color: #c3daff;
                 }
             }
 
@@ -758,17 +757,15 @@ nav {
                 background: #c9d1ff;
 
                 a {
-                    color: black;
-                    background: #c9d1ff;
+                    color: #c9d1ff;
                 }
             }
 
             &.uichallenge {
-                background: #55a8cf;
+                background: #83d8ff;
 
                 a {
-                    color: black;
-                    background: #55a8cf;
+                    color: #83d8ff;
                 }
             }
         }

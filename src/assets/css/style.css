@@ -1017,9 +1017,9 @@ nav i {
 
 .projects .projects_list .project_item .project_card a {
   display: inline-block;
-  width: 100%;
   text-decoration: none;
   font-size: 0.8em;
+  width: 100%;
   font-weight: bold;
   padding: 0.5em 0;
   text-align: center;
@@ -1031,7 +1031,7 @@ nav i {
 }
 
 .projects .projects_list .project_item.whatscookn a {
-  background: #ffd98d;
+  color: #ffd98d;
 }
 
 .projects .projects_list .project_item.bayanihanph {
@@ -1039,16 +1039,15 @@ nav i {
 }
 
 .projects .projects_list .project_item.bayanihanph a {
-  background: #bfa1ff;
+  color: #bfa1ff;
 }
 
 .projects .projects_list .project_item.covidtracker {
-  background: #6e89ff;
+  background: #c3daff;
 }
 
 .projects .projects_list .project_item.covidtracker a {
-  color: black;
-  background: #6e89ff;
+  color: #c3daff;
 }
 
 .projects .projects_list .project_item.needl {
@@ -1056,17 +1055,15 @@ nav i {
 }
 
 .projects .projects_list .project_item.needl a {
-  color: black;
-  background: #c9d1ff;
+  color: #c9d1ff;
 }
 
 .projects .projects_list .project_item.uichallenge {
-  background: #55a8cf;
+  background: #83d8ff;
 }
 
 .projects .projects_list .project_item.uichallenge a {
-  color: black;
-  background: #55a8cf;
+  color: #83d8ff;
 }
 
 .organizations {

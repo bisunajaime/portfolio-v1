@@ -8,10 +8,6 @@ import {
     Link
 } from "react-router-dom";
 
-
-// import { first, second, third } from '../assets/images/logo.png'
-
-
 function Projects() {
     return (
         <section className="projects" id="projects">
@@ -54,7 +50,6 @@ function ProjectsList() {
                 advertise their products. Having a list of categories ready for the regular user to pick from,
                             making them decide quicker when thinking of buying something.</p>
                 <Link to="/project/whatscookn">See more</Link>
-                {/* <a href="whatscookn/showcase.html">See more</a> */}
             </div>
         </div>
         <div className="project_item bayanihanph">
