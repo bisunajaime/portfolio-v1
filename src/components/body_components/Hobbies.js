@@ -6,16 +6,12 @@ export default function Hobbies() {
     return (
         <section className="hobbies" id="hobbies">
             <div className="hobbies_title">
-                <h1>In my free time<br /> I like to</h1>
+                <h1>Hobbies</h1>
             </div>
             <div className="hobbies_list">
                 <div className="hobby_box">
                     <FontAwesomeIcon icon={faCode} color="white" fixedWidth className="fa_icon" />
                     <p>Code</p>
-                </div>
-                <div className="hobby_box">
-                    <FontAwesomeIcon icon={faBasketballBall} color="orange" fixedWidth className="fa_icon" />
-                    <p>Ball</p>
                 </div>
                 <div className="hobby_box">
                     <FontAwesomeIcon icon={faBowlingBall} color="grey" fixedWidth className="fa_icon" />

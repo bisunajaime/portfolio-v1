@@ -555,7 +555,7 @@ nav i {
           justify-content: space-evenly;
   width: 80%;
   max-width: 90%;
-  padding: 0;
+  padding: 2em 0;
 }
 
 @media screen and (min-width: 1024px) {
@@ -685,7 +685,7 @@ nav i {
 }
 
 .hobbies .hobbies_title {
-  padding: 2em 0;
+  padding: 4em 0;
 }
 
 @media screen and (min-width: 1024px) {
@@ -709,7 +709,6 @@ nav i {
 .hobbies .hobbies_title h1 {
   text-align: center;
   color: white;
-  font-size: 1em;
 }
 
 @media screen and (min-width: 1024px) {
@@ -736,7 +735,7 @@ nav i {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  max-width: 90%;
+  max-width: 100%;
   width: 100%;
   padding: 1em 0;
 }
@@ -776,10 +775,12 @@ nav i {
           justify-content: center;
   padding: 3em;
   margin: 5px;
-  height: 100px;
-  width: 100px;
+  height: 50px;
+  width: 50px;
   -webkit-box-shadow: 0px 2.5px 0px 0px #7a7a7a;
   box-shadow: 0px 2.5px 0px 0px #7a7a7a;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
 }
 
 @media screen and (min-width: 1024px) {
@@ -787,12 +788,20 @@ nav i {
     height: 200px;
     width: 200px;
   }
+  .hobbies .hobbies_list .hobby_box:hover {
+    -webkit-box-shadow: 0px 5px 0px 0px #cbffa9;
+    box-shadow: 0px 5px 0px 0px #cbffa9;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .hobbies .hobbies_list .hobby_box {
     height: 200px;
     width: 200px;
+  }
+  .hobbies .hobbies_list .hobby_box:hover {
+    -webkit-box-shadow: 0px 3px 0px 0px #cbffa9;
+    box-shadow: 0px 3px 0px 0px #cbffa9;
   }
 }
 
@@ -817,8 +826,8 @@ nav i {
 .hobbies .hobbies_list .hobby_box p {
   font-weight: bold;
   color: white;
-  font-size: 0.9em;
-  padding-top: 0.2em;
+  font-size: 0.7em;
+  padding-top: 0.4em;
 }
 
 @media screen and (min-width: 1024px) {
@@ -1141,9 +1150,8 @@ nav i {
 }
 
 .showcase .showcase_left_grid {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  grid-row: 1/2;
+  -ms-grid-row: 2;
+  grid-row: 2/2;
   height: 50vh;
   width: 100%;
   padding: 1em 0;
@@ -1201,8 +1209,9 @@ nav i {
 .showcase .showcase_right_grid {
   padding: 2em;
   height: auto;
-  -ms-grid-row: 2;
-  grid-row: 2/2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
   max-width: 95%;
   margin: auto;
 }
@@ -1324,7 +1333,7 @@ nav i {
 
 footer {
   padding: 2em 0;
-  background: #111111;
+  background: #282828;
 }
 
 footer p {
@@ -1348,5 +1357,150 @@ footer p {
   .fa_icon {
     font-size: 3em;
   }
+}
+
+.project_body {
+  height: auto;
+  background: #111111;
+}
+
+.project_body h1 {
+  color: white;
+  text-align: center;
+  padding: 3em 0;
+}
+
+@media screen and (min-width: 1024px) {
+  .project_body h1 {
+    font-size: 2em;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .project_body h1 {
+    font-size: 2em;
+  }
+}
+
+.project_body .list_projects {
+  max-width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+  padding: 3em 0;
+}
+
+@media screen and (min-width: 1024px) {
+  .project_body .list_projects {
+    max-width: 60%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .project_body .list_projects {
+    max-width: 90%;
+  }
+}
+
+.project_body .list_projects .project_object {
+  margin: 0.5em;
+}
+
+.project_body .list_projects .project_object .project_image {
+  height: 150px;
+  width: 150px;
+  margin-bottom: 0.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+@media screen and (min-width: 1024px) {
+  .project_body .list_projects .project_object .project_image {
+    height: 300px;
+    width: 300px;
+  }
+  .project_body .list_projects .project_object .project_image:hover {
+    -webkit-transition: 0.25s;
+    transition: 0.25s;
+    padding-top: 1em;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .project_body .list_projects .project_object .project_image {
+    height: 250px;
+    width: 250px;
+  }
+  .project_body .list_projects .project_object .project_image:hover {
+    -webkit-transition: 0.25s;
+    transition: 0.25s;
+    padding-top: 2em;
+  }
+}
+
+.project_body .list_projects .project_object .project_image img {
+  padding-top: 2em;
+  height: 100%;
+}
+
+.project_body .list_projects .project_object .project_image.whatscookn {
+  background: #f3edb9;
+}
+
+.project_body .list_projects .project_object .project_image.bayanihanph {
+  background: #bfa1ff;
+}
+
+.project_body .list_projects .project_object .project_image.covidtracker {
+  background: #a1b2ff;
+}
+
+.project_body .list_projects .project_object .project_image.needl {
+  background: #ff9797;
+}
+
+.project_body .list_projects .project_object .project_image.traveldesign {
+  background: #92ebff;
+}
+
+.project_body .list_projects .project_object .project_label {
+  font-weight: 400;
+  color: white;
+  text-align: center;
+  font-size: 0.7em;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 1024px) {
+  .project_body .list_projects .project_object .project_label {
+    font-size: 1em;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .project_body .list_projects .project_object .project_label {
+    font-size: 1em;
+  }
+}
+
+.link {
+  outline: none;
+  text-decoration: none;
 }
 /*# sourceMappingURL=style.css.map */

@@ -4,9 +4,7 @@ import React, { Component } from 'react'
 const projects = {
     'bayanihanph': {
         'title': 'BayanihanPH',
-        'description': <p>Looking for a nearby relief center to donate goods or offer help to those who are in need of
-        supplies? BayanihanPH is here!
-                <br /><br />
+        'description': <p>
             <span className="bayanihanph">BayanihanPH</span> is a mobile application for people who are looking to help others during
                 calamity.
                 It allows relief centers to input information such as availability, supplies needed, contact info,
