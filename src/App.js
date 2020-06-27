@@ -13,9 +13,6 @@ import {
   Switch,
   Route,
   Redirect,
-  Link,
-  useParams,
-  useHistory
 } from "react-router-dom";
 
 function App() {

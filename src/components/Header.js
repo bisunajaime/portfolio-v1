@@ -27,7 +27,7 @@ class Header extends Component {
     render() {
         return (
             <nav className="header">
-                <img src={logo} alt="" />
+                <img src={logo} alt="my_logo" />
                 <h1>Jaime Bisuna</h1>
                 <i onClick={this.clickFunc} id="menu_bars" ><FontAwesomeIcon icon={this.state.isOpen ? faTimes : faBars} color="white" /></i>
                 <div className="menu_items">

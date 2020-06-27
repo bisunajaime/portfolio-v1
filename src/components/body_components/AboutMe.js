@@ -1,11 +1,11 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGithub, faFacebook, faInstagram, faYoutube, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { faGithub, faFacebook, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons'
 
 function AboutMe() {
     return (
         <section className="about_me" id="home">
-            <img src={require('../../assets/images/main_image.png')} />
+            <img src={require('../../assets/images/main_image.png')} alt="Main_Image" />
             {/* <div className="photo_side">
                 <div className="photo">
                     <h1>Some Photo</h1>
@@ -33,7 +33,7 @@ function AboutMe() {
                     and <span id="dsc">Developer Student Clubs Philippines</span></p>
                 </div>
                 <div className="socials">
-                    <a href="https://github.com/jose-bamboo" className="circle" target="_blank">
+                    <a href="https://github.com/jose-bamboo" className="circle" target="_blank" rel="noopener">
                         <i><FontAwesomeIcon icon={faGithub} size="2x" color="black" /></i>
                     </a>
                     <a className="circle">
@@ -42,7 +42,7 @@ function AboutMe() {
                     <a className="circle">
                         <i><FontAwesomeIcon icon={faInstagram} size="2x" color="black" /></i>
                     </a>
-                    <a href='https://www.youtube.com/channel/UCNSVSg0tXQI9CnBOaOzRDIA' target='_blank' className="circle">
+                    <a href='https://www.youtube.com/channel/UCNSVSg0tXQI9CnBOaOzRDIA' target='_blank' rel="noopener" className="circle">
                         <i><FontAwesomeIcon icon={faYoutube} size="2x" color="black" /></i>
                     </a>
                 </div>

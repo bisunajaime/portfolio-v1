@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import Flickity from 'react-flickity-component'
 import {
     useParams,
@@ -21,13 +21,11 @@ function ProjectPage(props) {
         contain: true,
         wrapAround: true,
         fullscreen: true,
-        pageDots: true,
         prevNextButtons: true,
         setGallerySize: false,
         imagesLoaded: true,
         lazyLoad: true
     }
-    const baseURL = `../../assets/images/${id}/`
     return (
         <section className="showcase">
             <Flickity
@@ -37,7 +35,7 @@ function ProjectPage(props) {
                 reloadOnUpdate={true}
                 static
             >
-                {images.map((elem, i) => <img key={i} src={require(`../../assets/images/${id}/${elem}`)} data-flickity-lazyload={require(`../../assets/images/${id}/${elem}`)}  ></img>)}
+                {images.map((elem, i) => <img key={i} src={require(`../../assets/images/${id}/${elem}`)} data-flickity-lazyload={require(`../../assets/images/${id}/${elem}`)} alt="Image_Here" ></img>)}
             </Flickity>
             <div className="showcase_right_grid">
                 <div className="showcase_title">

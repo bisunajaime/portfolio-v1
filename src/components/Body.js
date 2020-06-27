@@ -1,7 +1,6 @@
-import React, { Component } from 'react'
+import React from 'react'
 import AboutMe from './body_components/AboutMe'
 import Hobbies from './body_components/Hobbies'
-import Projects from './body_components/Projects'
 import Activities from './body_components/Activities'
 import { Link } from 'react-router-dom'
 
@@ -48,7 +47,7 @@ function ProjectItem(props) {
         <Link to={`/project/${id}`} className="link">
             <div className="project_object">
                 <div className={`project_image ${id}`}>
-                    <img src={src} alt="project_image" />
+                    <img src={src} alt="project_image" alt="Project_Image" />
                 </div>
                 <div className="project_label">{name}</div>
             </div>
