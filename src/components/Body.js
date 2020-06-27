@@ -7,13 +7,14 @@ import { Link } from 'react-router-dom'
 
 const Body = () => {
     return (
-        <React.Fragment>
+        <main>
+
             <AboutMe />
             <Hobbies />
             {/* <Projects /> */}
-            <TestProjects show={true} />
+            <TestProjects />
             <Activities />
-        </React.Fragment>
+        </main>
     )
 }
 

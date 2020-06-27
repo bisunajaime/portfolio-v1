@@ -5,6 +5,7 @@ import { faGithub, faFacebook, faInstagram, faYoutube, faLinkedin } from '@forta
 function AboutMe() {
     return (
         <section className="about_me" id="home">
+            <img src={require('../../assets/images/main_image.png')} />
             {/* <div className="photo_side">
                 <div className="photo">
                     <h1>Some Photo</h1>
