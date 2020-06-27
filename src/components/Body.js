@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import AboutMe from './body_components/AboutMe'
 import Hobbies from './body_components/Hobbies'
 import Projects from './body_components/Projects'
+import Activities from './body_components/Activities'
 import { Link } from 'react-router-dom'
 
 const Body = () => {
@@ -10,15 +11,18 @@ const Body = () => {
             <AboutMe />
             <Hobbies />
             {/* <Projects /> */}
-            <TestProjects />
+            <TestProjects show={true} />
+            <Activities />
         </React.Fragment>
     )
 }
 
-function TestProjects() {
+export function TestProjects() {
     return (
         <section className="project_body">
-            <h1>Projects</h1>
+            <div className='head_project'>
+                <h1>Projects</h1>
+            </div>
             <ProjectsList />
         </section>
     )

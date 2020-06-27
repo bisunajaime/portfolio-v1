@@ -34,7 +34,6 @@ class Header extends Component {
                     <a href="#home" className="active">Home</a>
                     <a href="#hobbies">Hobbies</a>
                     <a href="#projects">Projects</a>
-                    <a href="#resume">Resume</a>
                     <a href="#activities">Activities</a>
                 </div>
             </nav>

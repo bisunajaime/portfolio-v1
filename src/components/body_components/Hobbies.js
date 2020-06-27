@@ -1,12 +1,13 @@
 import React, { Component } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faTv, faBowlingBall, faBasketballBall, faCode, faBook } from '@fortawesome/free-solid-svg-icons'
+import { faTv, faBowlingBall, faPaintBrush, faCode, faBook } from '@fortawesome/free-solid-svg-icons'
 
 export default function Hobbies() {
     return (
         <section className="hobbies" id="hobbies">
             <div className="hobbies_title">
                 <h1>Hobbies</h1>
+                <p>These are some things that I like to do when I'm not busy.</p>
             </div>
             <div className="hobbies_list">
                 <div className="hobby_box">
@@ -26,7 +27,7 @@ export default function Hobbies() {
                     <p>Learn</p>
                 </div>
                 <div className="hobby_box">
-                    <FontAwesomeIcon icon={faBook} color="rgb(255, 252, 209)" fixedWidth className="fa_icon" />
+                    <FontAwesomeIcon icon={faPaintBrush} color="rgb(255, 252, 209)" fixedWidth className="fa_icon" />
                     <p>Design</p>
                 </div>
             </div>

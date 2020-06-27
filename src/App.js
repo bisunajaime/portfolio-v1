@@ -52,7 +52,6 @@ function Menu() {
       <a href="#home" className="active">Home</a>
       <a href="#hobbies">Hobbies</a>
       <a href="#projects">Projects</a>
-      <a href="#resume">Resume</a>
       <a href="#activities">Activities</a>
     </div>
   )
