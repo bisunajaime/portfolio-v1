@@ -19,8 +19,8 @@ function ActivitiesList() {
             <Activity title="DSC Benilde RnD" description="Role of Research and Development in Developer Student Club Benilde Organization" />
             <Activity title="Guest Speaker" description="Guest speaker at Flutter for Starters Webinar hosted by Developer Student Clubs." />
             <Activity title="Samsung Workshop" description="Attended Samsung Workshop hosted by AIM: Benilde where we made our own apps for Samsung Galaxy Watch" />
-            <Activity title="Flutter Study Jam 1" description="Speaker at DSC Benilde's Flutter Study Jam, where I taught them the basics of Flutter." />
-            <Activity title="Flutter Study Jam 2" description={`Speaker at DSC Benilde's Flutter Study Jam, where I taught them how to create a QR scanner mobile application with Flutter.`} />
+            <Activity title="Flutter Study Jam 1" description="Speaker at DSC Benilde's Flutter Study Jam, where I taught the basics of Flutter." />
+            <Activity title="Flutter Study Jam 2" description={`Speaker at DSC Benilde's Flutter Study Jam, where I taught how to create a QR scanner mobile application with Flutter.`} />
         </div>
     )
 }

@@ -22,7 +22,7 @@ function ProjectPage(props) {
         wrapAround: true,
         fullscreen: true,
         pageDots: true,
-        prevNextButtons: false,
+        prevNextButtons: true,
         setGallerySize: false,
         imagesLoaded: true,
         lazyLoad: true

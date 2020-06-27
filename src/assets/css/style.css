@@ -1559,7 +1559,11 @@ nav i {
 }
 
 .project_body .list_projects .project_object .project_image.traveldesign {
-  background: #92ebff;
+  background: #fba8ff;
+}
+
+.project_body .list_projects .project_object .project_image.furnituredesign {
+  background: #888aff;
 }
 
 .project_body .list_projects .project_object .project_label {
@@ -1692,8 +1696,8 @@ nav i {
   height: 200px;
   width: 200px;
   padding: 0 1em;
-  -webkit-box-shadow: 2px 2px 0px 0px #f7ffb4;
-  box-shadow: 2px 2px 0px 0px #f7ffb4;
+  -webkit-box-shadow: 2px 2px 0px 0px #cbffa9;
+  box-shadow: 2px 2px 0px 0px #cbffa9;
 }
 
 @media screen and (min-width: 1024px) {

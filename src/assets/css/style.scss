@@ -1161,7 +1161,11 @@ nav {
                 }
 
                 &.traveldesign {
-                    background: #92ebff;
+                    background: #fba8ff;
+                }
+
+                &.furnituredesign {
+                    background: #888aff;
                 }
             }
 
@@ -1264,9 +1268,9 @@ nav {
             height: 200px;
             width: 200px;
             padding: 0 1em;
-            -webkit-box-shadow: 2px 2px 0px 0px #f7ffb4;
-            -moz-box-shadow: 2px 2px 0px 0px #f7ffb4;
-            box-shadow: 2px 2px 0px 0px #f7ffb4;
+            -webkit-box-shadow: 2px 2px 0px 0px #cbffa9;
+            -moz-box-shadow: 2px 2px 0px 0px #cbffa9;
+            box-shadow: 2px 2px 0px 0px #cbffa9;
 
 
             @media screen and (min-width: 1024px) {

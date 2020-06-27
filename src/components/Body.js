@@ -20,7 +20,7 @@ const Body = () => {
 
 export function TestProjects() {
     return (
-        <section className="project_body">
+        <section className="project_body" id='projects'>
             <div className='head_project'>
                 <h1>Projects</h1>
             </div>
@@ -37,6 +37,7 @@ function ProjectsList() {
             <ProjectItem name="Covid19-Tracker" src={require("../assets/images/covidtracker.png")} id="covidtracker" />
             <ProjectItem name="NeedL" src={require("../assets/images/needl.png")} id="needl" />
             <ProjectItem name="Travel Design" src={require("../assets/images/uichallenge.png")} id="traveldesign" />
+            <ProjectItem name="Furniture Design" src={require("../assets/images/furnituredesign.png")} id="furnituredesign" />
         </div>
     )
 }
