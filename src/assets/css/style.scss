@@ -493,7 +493,7 @@ nav {
     }
 }
 
-.hobbies {
+.techstack {
     width: 100%;
     background-color: #111111;
     display: flex;
@@ -506,7 +506,7 @@ nav {
         background: #1d1d1d;
     }
 
-    .hobbies_title {
+    .techstack_title {
         padding: 4em 0;
 
         display: flex;
@@ -553,10 +553,10 @@ nav {
         }
     }
 
-    .hobbies_list {
+    .techstack_list {
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: start;
         flex-wrap: wrap;
         max-width: 90%;
         width: 100%;
@@ -572,7 +572,7 @@ nav {
             max-width: 80%;
         }
 
-        .hobby_box {
+        .techstack_box {
             background: #292929;
             display: flex;
             flex-direction: column;
@@ -589,25 +589,51 @@ nav {
             transition: 0.25s;
 
             @media screen and (min-width: 1024px) {
-                height: 200px;
-                width: 200px;
+                height: 170px;
+                width: 170px;
 
                 &:hover {
-                    -webkit-box-shadow: 0px 5px 0px 0px #cbffa9;
-                    -moz-box-shadow: 0px 5px 0px 0px #cbffa9;
-                    box-shadow: 0px 5px 0px 0px #cbffa9;
+                    &.orange {
+                        -webkit-box-shadow: 0px 5px 0px 0px #ffd3a9;
+                        -moz-box-shadow: 0px 5px 0px 0px #ffd3a9;
+                        box-shadow: 0px 5px 0px 0px #ffd3a9;
+                    }
+
+                    &.red {
+                        -webkit-box-shadow: 0px 5px 0px 0px #ffa9a9;
+                        -moz-box-shadow: 0px 5px 0px 0px #ffa9a9;
+                        box-shadow: 0px 5px 0px 0px #ffa9a9;
+                    }
+
+                    &.green {
+                        -webkit-box-shadow: 0px 5px 0px 0px #cbffa9;
+                        -moz-box-shadow: 0px 5px 0px 0px #cbffa9;
+                        box-shadow: 0px 5px 0px 0px #cbffa9;
+                    }
+
+                    &.blue {
+                        -webkit-box-shadow: 0px 5px 0px 0px #a9e4ff;
+                        -moz-box-shadow: 0px 5px 0px 0px #a9e4ff;
+                        box-shadow: 0px 5px 0px 0px #a9e4ff;
+                    }
+
+                    &.white {
+                        -webkit-box-shadow: 0px 5px 0px 0px #ffffff;
+                        -moz-box-shadow: 0px 5px 0px 0px #ffffff;
+                        box-shadow: 0px 5px 0px 0px #ffffff;
+                    }
+
+                    &.purple {
+                        -webkit-box-shadow: 0px 5px 0px 0px #eba9ff;
+                        -moz-box-shadow: 0px 5px 0px 0px #eba9ff;
+                        box-shadow: 0px 5px 0px 0px #eba9ff;
+                    }
                 }
             }
 
             @media screen and (min-width: 768px) and (max-width: 1024px) {
-                height: 200px;
-                width: 200px;
-
-                &:hover {
-                    -webkit-box-shadow: 0px 3px 0px 0px #cbffa9;
-                    -moz-box-shadow: 0px 3px 0px 0px #cbffa9;
-                    box-shadow: 0px 3px 0px 0px #cbffa9;
-                }
+                height: 150px;
+                width: 150px;
             }
 
             i {
@@ -616,11 +642,11 @@ nav {
                 font-size: 1.4em;
 
                 @media screen and (min-width: 1024px) {
-                    font-size: 3em;
+                    font-size: 1.5em;
                 }
 
                 @media screen and (min-width: 768px) and (max-width: 1024px) {
-                    font-size: 3em;
+                    font-size: 1.5em;
                 }
             }
 
@@ -629,13 +655,14 @@ nav {
                 color: white;
                 font-size: 0.7em;
                 padding-top: 0.4em;
+                text-align: center;
 
                 @media screen and (min-width: 1024px) {
                     font-size: 1.2em;
                 }
 
                 @media screen and (min-width: 768px) and (max-width: 1024px) {
-                    font-size: 1.1em;
+                    font-size: 0.8em;
                 }
             }
         }
@@ -890,6 +917,11 @@ nav {
         width: 100%;
         padding: 1em 0;
 
+        &.demo {
+            padding: 0;
+            overflow-y: hidden;
+        }
+
         &.covidtracker {
             background: #6e89ff;
         }
@@ -1080,6 +1112,14 @@ nav {
 .project_body {
     height: auto;
     background: #111111;
+
+    @media screen and (min-width: 1024px) {
+        padding: 4em 0;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+        padding: 2em 0;
+    }
 
     .head_project {
         display: flex;

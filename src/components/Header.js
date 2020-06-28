@@ -31,8 +31,8 @@ class Header extends Component {
                 <h1>Jaime Bisuna</h1>
                 <i onClick={this.clickFunc} id="menu_bars" ><FontAwesomeIcon icon={this.state.isOpen ? faTimes : faBars} color="white" /></i>
                 <div className="menu_items">
-                    <a href="#home" className="active">Home</a>
-                    <a href="#hobbies">Hobbies</a>
+                    <a href="#home">Home</a>
+                    <a href="#techstack">TechStack</a>
                     <a href="#projects">Projects</a>
                     <a href="#activities">Activities</a>
                 </div>

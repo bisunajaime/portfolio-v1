@@ -60,7 +60,7 @@ function ProjectPage(props) {
                 {images.map((elem, i) => <img key={i} src={require(`../../assets/images/${id}/${elem}`)} data-flickity-lazyload={require(`../../assets/images/${id}/${elem}`)} alt="Image_Here" ></img>)}
             </Flickity>
         } else {
-            return <div className={`showcase_left_grid ${id}`}>
+            return <div className={`showcase_left_grid ${id} demo`}>
                 <ReactPlayer url={require(`../../assets/demo/${id}_demo.mp4`)} width='100%' height='100%' controls={true} />
             </div>
         }

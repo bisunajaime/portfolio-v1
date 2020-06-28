@@ -2,7 +2,7 @@ import React from 'react'
 
 function Activities() {
     return (
-        <section className='activities'>
+        <section className='activities' id='activities'>
             <div className='activities_header'>
                 <h1>Activities</h1>
                 <p>Some of the activities I have done, including some workshops I attended.</p>
