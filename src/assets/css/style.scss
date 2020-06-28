@@ -536,8 +536,8 @@ nav {
 
         p {
             color: white;
-            margin-top: .5em;
-            font-size: .6em;
+            margin-top: 0.5em;
+            font-size: 0.6em;
             max-width: 50%;
             text-align: center;
 
@@ -547,7 +547,7 @@ nav {
             }
 
             @media screen and (min-width: 768px) and (max-width: 1024px) {
-                font-size: .8em;
+                font-size: 0.8em;
                 max-width: 70%;
             }
         }
@@ -744,9 +744,11 @@ nav {
                 padding: 1em;
                 width: 100%;
 
-                @media screen and (min-width: 1024px) {}
+                @media screen and (min-width: 1024px) {
+                }
 
-                @media screen and (min-width: 768px) and (max-width: 1024px) {}
+                @media screen and (min-width: 768px) and (max-width: 1024px) {
+                }
 
                 h1 {
                     font-size: 1em;
@@ -1040,6 +1042,37 @@ nav {
                 }
             }
 
+            button {
+                padding: 1em 1.5em;
+                background: transparent;
+                font-weight: bold;
+                font-size: 0.8em;
+                margin: 1em 0;
+                cursor: pointer;
+
+                &.closed {
+                    background: transparent;
+                }
+
+                &.open {
+                    color: black;
+                }
+
+                &.bayanihanph {
+                    color: #e5b8ff;
+                    border: 1px solid #e5b8ff;
+                }
+
+                &.whatscookn {
+                    color: #fff7b1;
+                    border: 1px solid #fff7b1;
+                }
+
+                &.covidtracker {
+                    color: #a1b2ff;
+                    border: 1px solid #a1b2ff;
+                }
+            }
         }
     }
 }
@@ -1072,7 +1105,7 @@ nav {
             color: white;
             margin-top: 1em;
             font-weight: 400;
-            font-size: .8em;
+            font-size: 0.8em;
             text-decoration: none;
             transition: 0.25s;
 
@@ -1226,11 +1259,10 @@ nav {
 
         p {
             color: white;
-            margin-top: .5em;
-            font-size: .6em;
+            margin-top: 0.5em;
+            font-size: 0.6em;
             max-width: 50%;
             text-align: center;
-
 
             @media screen and (min-width: 1024px) {
                 font-size: 1em;
@@ -1238,7 +1270,7 @@ nav {
             }
 
             @media screen and (min-width: 768px) and (max-width: 1024px) {
-                font-size: .8em;
+                font-size: 0.8em;
                 max-width: 70%;
             }
         }
@@ -1263,14 +1295,13 @@ nav {
 
         .activity {
             background: #292929;
-            margin: .5em;
+            margin: 0.5em;
             height: 200px;
             width: 200px;
             padding: 0 1em;
             -webkit-box-shadow: 2px 2px 0px 0px #cbffa9;
             -moz-box-shadow: 2px 2px 0px 0px #cbffa9;
             box-shadow: 2px 2px 0px 0px #cbffa9;
-
 
             @media screen and (min-width: 1024px) {
                 height: 250px;
@@ -1283,7 +1314,7 @@ nav {
             }
 
             h1 {
-                font-size: .8em;
+                font-size: 0.8em;
                 color: white;
                 padding: 1em 0;
 

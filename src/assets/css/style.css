@@ -771,8 +771,8 @@ nav i {
 
 .hobbies .hobbies_title p {
   color: white;
-  margin-top: .5em;
-  font-size: .6em;
+  margin-top: 0.5em;
+  font-size: 0.6em;
   max-width: 50%;
   text-align: center;
 }
@@ -786,7 +786,7 @@ nav i {
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .hobbies .hobbies_title p {
-    font-size: .8em;
+    font-size: 0.8em;
     max-width: 70%;
   }
 }
@@ -1400,6 +1400,38 @@ nav i {
   color: #d29bff;
 }
 
+.showcase .showcase_right_grid .showcase_details button {
+  padding: 1em 1.5em;
+  background: transparent;
+  font-weight: bold;
+  font-size: 0.8em;
+  margin: 1em 0;
+  cursor: pointer;
+}
+
+.showcase .showcase_right_grid .showcase_details button.closed {
+  background: transparent;
+}
+
+.showcase .showcase_right_grid .showcase_details button.open {
+  color: black;
+}
+
+.showcase .showcase_right_grid .showcase_details button.bayanihanph {
+  color: #e5b8ff;
+  border: 1px solid #e5b8ff;
+}
+
+.showcase .showcase_right_grid .showcase_details button.whatscookn {
+  color: #fff7b1;
+  border: 1px solid #fff7b1;
+}
+
+.showcase .showcase_right_grid .showcase_details button.covidtracker {
+  color: #a1b2ff;
+  border: 1px solid #a1b2ff;
+}
+
 .project_body {
   height: auto;
   background: #111111;
@@ -1443,7 +1475,7 @@ nav i {
   color: white;
   margin-top: 1em;
   font-weight: 400;
-  font-size: .8em;
+  font-size: 0.8em;
   text-decoration: none;
   -webkit-transition: 0.25s;
   transition: 0.25s;
@@ -1639,8 +1671,8 @@ nav i {
 
 .activities .activities_header p {
   color: white;
-  margin-top: .5em;
-  font-size: .6em;
+  margin-top: 0.5em;
+  font-size: 0.6em;
   max-width: 50%;
   text-align: center;
 }
@@ -1654,7 +1686,7 @@ nav i {
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .activities .activities_header p {
-    font-size: .8em;
+    font-size: 0.8em;
     max-width: 70%;
   }
 }
@@ -1691,7 +1723,7 @@ nav i {
 
 .activities .activities_list .activity {
   background: #292929;
-  margin: .5em;
+  margin: 0.5em;
   height: 200px;
   width: 200px;
   padding: 0 1em;
@@ -1714,7 +1746,7 @@ nav i {
 }
 
 .activities .activities_list .activity h1 {
-  font-size: .8em;
+  font-size: 0.8em;
   color: white;
   padding: 1em 0;
 }
