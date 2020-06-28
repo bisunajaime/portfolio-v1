@@ -7,6 +7,10 @@
   font-family: "Montserrat";
 }
 
+body {
+  background: #282828;
+}
+
 .menu_items_mobile {
   position: fixed;
   background: white;
@@ -716,7 +720,6 @@ nav i {
 @media screen and (min-width: 1024px) {
   .techstack {
     padding: 5em 0;
-    background: #1d1d1d;
   }
 }
 
@@ -851,6 +854,13 @@ nav i {
   transition: 0.25s;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .techstack .techstack_list .techstack_box {
+    height: 150px;
+    width: 150px;
+  }
+}
+
 @media screen and (min-width: 1024px) {
   .techstack .techstack_list .techstack_box {
     height: 170px;
@@ -882,13 +892,6 @@ nav i {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  .techstack .techstack_list .techstack_box {
-    height: 150px;
-    width: 150px;
-  }
-}
-
 .techstack .techstack_list .techstack_box i {
   color: white;
   padding-bottom: 5px;
@@ -904,6 +907,22 @@ nav i {
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .techstack .techstack_list .techstack_box i {
     font-size: 1.5em;
+  }
+}
+
+.techstack .techstack_list .techstack_box img {
+  height: 25px;
+}
+
+@media screen and (min-width: 1024px) {
+  .techstack .techstack_list .techstack_box img {
+    height: 50px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .techstack .techstack_list .techstack_box img {
+    height: 50px;
   }
 }
 
@@ -1429,6 +1448,7 @@ nav i {
   font-size: 0.8em;
   margin: 1em 0;
   cursor: pointer;
+  outline: none;
 }
 
 .showcase .showcase_right_grid .showcase_details button.closed {
@@ -1442,16 +1462,37 @@ nav i {
 .showcase .showcase_right_grid .showcase_details button.bayanihanph {
   color: #e5b8ff;
   border: 1px solid #e5b8ff;
+  -webkit-transition: background 0.25s;
+  transition: background 0.25s;
+}
+
+.showcase .showcase_right_grid .showcase_details button.bayanihanph:hover {
+  background-color: #eba9ff;
+  color: black;
 }
 
 .showcase .showcase_right_grid .showcase_details button.whatscookn {
   color: #fff7b1;
   border: 1px solid #fff7b1;
+  -webkit-transition: background 0.25s;
+  transition: background 0.25s;
+}
+
+.showcase .showcase_right_grid .showcase_details button.whatscookn:hover {
+  background-color: #fff7b1;
+  color: black;
 }
 
 .showcase .showcase_right_grid .showcase_details button.covidtracker {
   color: #a1b2ff;
   border: 1px solid #a1b2ff;
+  -webkit-transition: background 0.25s;
+  transition: background 0.25s;
+}
+
+.showcase .showcase_right_grid .showcase_details button.covidtracker:hover {
+  background-color: #a1b2ff;
+  color: black;
 }
 
 .project_body {
@@ -1758,8 +1799,8 @@ nav i {
 .activities .activities_list .activity {
   background: #292929;
   margin: 0.5em;
-  height: 200px;
-  width: 200px;
+  height: 150px;
+  width: 150px;
   padding: 0 1em;
   -webkit-box-shadow: 2px 2px 0px 0px #cbffa9;
   box-shadow: 2px 2px 0px 0px #cbffa9;
@@ -1780,7 +1821,7 @@ nav i {
 }
 
 .activities .activities_list .activity h1 {
-  font-size: 0.8em;
+  font-size: 0.6em;
   color: white;
   padding: 1em 0;
 }
@@ -1800,7 +1841,7 @@ nav i {
 .activities .activities_list .activity p {
   line-height: 1.6;
   color: white;
-  font-size: 0.6em;
+  font-size: 0.5em;
   text-align: left;
 }
 

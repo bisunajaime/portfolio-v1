@@ -7,6 +7,10 @@
     font-family: "Montserrat";
 }
 
+body {
+    background: #282828;
+}
+
 .menu_items_mobile {
     position: fixed;
     background: white;
@@ -503,7 +507,6 @@ nav {
 
     @media screen and (min-width: 1024px) {
         padding: 5em 0;
-        background: #1d1d1d;
     }
 
     .techstack_title {
@@ -588,6 +591,12 @@ nav {
             box-shadow: 0px 2.5px 0px 0px #7a7a7a;
             transition: 0.25s;
 
+
+            @media screen and (min-width: 768px) and (max-width: 1024px) {
+                height: 150px;
+                width: 150px;
+            }
+
             @media screen and (min-width: 1024px) {
                 height: 170px;
                 width: 170px;
@@ -631,11 +640,6 @@ nav {
                 }
             }
 
-            @media screen and (min-width: 768px) and (max-width: 1024px) {
-                height: 150px;
-                width: 150px;
-            }
-
             i {
                 color: white;
                 padding-bottom: 5px;
@@ -647,6 +651,18 @@ nav {
 
                 @media screen and (min-width: 768px) and (max-width: 1024px) {
                     font-size: 1.5em;
+                }
+            }
+
+            img {
+                height: 25px;
+
+                @media screen and (min-width: 1024px) {
+                    height: 50px;
+                }
+                
+                @media screen and (min-width: 768px) and (max-width: 1024px) {
+                    height: 50px;
                 }
             }
 
@@ -1081,6 +1097,7 @@ nav {
                 font-size: 0.8em;
                 margin: 1em 0;
                 cursor: pointer;
+                outline: none;
 
                 &.closed {
                     background: transparent;
@@ -1093,16 +1110,31 @@ nav {
                 &.bayanihanph {
                     color: #e5b8ff;
                     border: 1px solid #e5b8ff;
+                    transition: background 0.25s;
+                    &:hover {
+                        background-color: #eba9ff;
+                        color: black;
+                    }
                 }
 
                 &.whatscookn {
                     color: #fff7b1;
                     border: 1px solid #fff7b1;
+                    transition: background 0.25s;
+                    &:hover {
+                        background-color: #fff7b1;
+                        color: black;
+                    }
                 }
 
                 &.covidtracker {
                     color: #a1b2ff;
                     border: 1px solid #a1b2ff;
+                    transition: background 0.25s;
+                    &:hover {
+                        background-color: #a1b2ff;
+                        color: black;
+                    }
                 }
             }
         }
@@ -1336,8 +1368,8 @@ nav {
         .activity {
             background: #292929;
             margin: 0.5em;
-            height: 200px;
-            width: 200px;
+            height: 150px;
+            width: 150px;
             padding: 0 1em;
             -webkit-box-shadow: 2px 2px 0px 0px #cbffa9;
             -moz-box-shadow: 2px 2px 0px 0px #cbffa9;
@@ -1354,7 +1386,7 @@ nav {
             }
 
             h1 {
-                font-size: 0.8em;
+                font-size: 0.6em;
                 color: white;
                 padding: 1em 0;
 
@@ -1370,7 +1402,7 @@ nav {
             p {
                 line-height: 1.6;
                 color: white;
-                font-size: 0.6em;
+                font-size: 0.5em;
                 text-align: left;
 
                 @media screen and (min-width: 1024px) {
@@ -1396,6 +1428,7 @@ footer {
         color: white;
     }
 }
+
 
 .fa_icon {
     font-size: 1.5em;
