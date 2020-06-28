@@ -1,5 +1,4 @@
 import React from 'react'
-import Flickity from 'react-flickity-component'
 import '../../assets/css/flickity.css'
 import {
     Link

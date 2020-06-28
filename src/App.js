@@ -47,7 +47,7 @@ function Menu() {
   return (
     <div className="menu_items_mobile closed" id="menu_items_mobile">
       <a href="#home">Home</a>
-      <a href="#Techstack">Techstack</a>
+      <a href="#techstack">Techstack</a>
       <a href="#projects">Projects</a>
       <a href="#activities">Activities</a>
     </div>

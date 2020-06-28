@@ -22,17 +22,17 @@ function AboutMe() {
                     </div>
                 </Fade>
                 <Fade bottom cascade>
-                    <div className="socials">
-                        <a href="https://github.com/jose-bamboo" className="circle" target="_blank" rel="noopener">
+                    <div className="socials" target='_blank' rel="noopener">
+                        <a href="https://github.com/jose-bamboo" className="circle" target="_blank" rel="noopener noreferrer">
                             <i><FontAwesomeIcon icon={faGithub} size="2x" color="black" /></i>
                         </a>
-                        <a className="circle">
+                        <a className="circle" target='_blank' rel="noopener">
                             <i><FontAwesomeIcon icon={faFacebook} size="2x" color="black" /></i>
                         </a>
-                        <a className="circle">
+                        <a className="circle" target='_blank' rel="noopener">
                             <i><FontAwesomeIcon icon={faInstagram} size="2x" color="black" /></i>
                         </a>
-                        <a href='https://www.youtube.com/channel/UCNSVSg0tXQI9CnBOaOzRDIA' target='_blank' rel="noopener" className="circle">
+                        <a href='https://www.youtube.com/channel/UCNSVSg0tXQI9CnBOaOzRDIA' target='_blank' rel="noopener noreferrer" className="circle">
                             <i><FontAwesomeIcon icon={faYoutube} size="2x" color="black" /></i>
                         </a>
                     </div>

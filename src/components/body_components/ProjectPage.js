@@ -1,9 +1,8 @@
-import React, { useState, useEffect, useRef } from 'react'
+import React, { useState, useEffect } from 'react'
 import Flickity from 'react-flickity-component'
 import ReactPlayer from 'react-player'
 import {
     useParams,
-    useHistory,
     Link
 } from "react-router-dom";
 import '../../assets/css/flickity.css';
@@ -18,7 +17,6 @@ function ProjectPage(props) {
     const [showDemo, setShowDemo] = useState(false)
     let { id } = useParams()
     let { title, description, urls, images } = props.data[id]
-    let history = useHistory()
     const sliderOptions = {
         pageDots: true,
         cellAlign: 'center',
@@ -31,13 +29,11 @@ function ProjectPage(props) {
         lazyLoad: true
     }
     useEffect(() => {
-        console.log('used effect!')
+
     })
 
     const handleClick = () => {
-        console.log('scroll handled')
         setShowDemo(!showDemo);
-        console.log(showDemo)
     }
 
     const renderButton = (id) => {

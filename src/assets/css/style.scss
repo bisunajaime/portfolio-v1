@@ -5,6 +5,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "Montserrat";
+    scroll-behavior: smooth;
 }
 
 body {
@@ -298,7 +299,7 @@ nav {
 
             @media screen and (min-width: 1024px) {
                 align-items: flex-start;
-                justify-content: start;
+                justify-content: flex-start;
                 padding-left: 3em;
             }
 
@@ -421,7 +422,7 @@ nav {
 
             @media screen and (min-width: 1024px) {
                 align-items: flex-start;
-                justify-content: start;
+                justify-content: flex-start;
                 width: 100%;
             }
 
@@ -504,6 +505,7 @@ nav {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 2em 0;
 
     @media screen and (min-width: 1024px) {
         padding: 5em 0;
@@ -559,7 +561,7 @@ nav {
     .techstack_list {
         display: flex;
         justify-content: center;
-        align-items: start;
+        align-items: flex-start;
         flex-wrap: wrap;
         max-width: 90%;
         width: 100%;
@@ -590,7 +592,6 @@ nav {
             -moz-box-shadow: 0px 2.5px 0px 0px #7a7a7a;
             box-shadow: 0px 2.5px 0px 0px #7a7a7a;
             transition: 0.25s;
-
 
             @media screen and (min-width: 768px) and (max-width: 1024px) {
                 height: 150px;
@@ -660,7 +661,7 @@ nav {
                 @media screen and (min-width: 1024px) {
                     height: 50px;
                 }
-                
+
                 @media screen and (min-width: 768px) and (max-width: 1024px) {
                     height: 50px;
                 }
@@ -1002,7 +1003,7 @@ nav {
             padding-bottom: 0.5em;
             display: flex;
             align-items: center;
-            justify-content: start;
+            justify-content: flex-start;
 
             h1 {
                 font-size: 0.7em;
@@ -1111,6 +1112,7 @@ nav {
                     color: #e5b8ff;
                     border: 1px solid #e5b8ff;
                     transition: background 0.25s;
+
                     &:hover {
                         background-color: #eba9ff;
                         color: black;
@@ -1121,6 +1123,7 @@ nav {
                     color: #fff7b1;
                     border: 1px solid #fff7b1;
                     transition: background 0.25s;
+
                     &:hover {
                         background-color: #fff7b1;
                         color: black;
@@ -1131,6 +1134,7 @@ nav {
                     color: #a1b2ff;
                     border: 1px solid #a1b2ff;
                     transition: background 0.25s;
+
                     &:hover {
                         background-color: #a1b2ff;
                         color: black;
@@ -1206,7 +1210,7 @@ nav {
         padding: 3em 0;
 
         @media screen and (min-width: 1024px) {
-            max-width: 60%;
+            max-width: 90%;
         }
 
         @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -1371,6 +1375,10 @@ nav {
             height: 150px;
             width: 150px;
             padding: 0 1em;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
             -webkit-box-shadow: 2px 2px 0px 0px #cbffa9;
             -moz-box-shadow: 2px 2px 0px 0px #cbffa9;
             box-shadow: 2px 2px 0px 0px #cbffa9;
@@ -1406,11 +1414,30 @@ nav {
                 text-align: left;
 
                 @media screen and (min-width: 1024px) {
-                    font-size: 0.9em;
+                    font-size: 0.75em;
                 }
 
                 @media screen and (min-width: 768px) and (max-width: 1024px) {
-                    font-size: 0.8em;
+                    font-size: 0.65em;
+                }
+            }
+
+            a {
+                font-size: 0.4em;
+                color: #cbffa9;
+                text-decoration: none;
+                outline: none;
+                font-weight: bold;
+                border: 1px solid #cbffa9;
+                margin-top: 1em;
+                padding: 0.1em 0.7em;
+
+                @media screen and (min-width: 1024px) {
+                    font-size: 0.75em;
+                }
+
+                @media screen and (min-width: 768px) and (max-width: 1024px) {
+                    font-size: 0.65em;
                 }
             }
         }
@@ -1428,7 +1455,6 @@ footer {
         color: white;
     }
 }
-
 
 .fa_icon {
     font-size: 1.5em;

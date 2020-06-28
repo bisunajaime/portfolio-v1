@@ -63,7 +63,7 @@ const projects = {
             'fourth.png',
             'fifth.png',
         ]
-    }
+    },
 }
 
 export default projects

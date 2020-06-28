@@ -1,6 +1,6 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFire, faDatabase, } from '@fortawesome/free-solid-svg-icons'
+import { faDatabase, } from '@fortawesome/free-solid-svg-icons'
 import { faJava, faJs, faHtml5, faCss3, faPhp, faReact, faAndroid, faNodeJs, faLaravel, faGithub, faBootstrap, } from '@fortawesome/free-brands-svg-icons'
 import Fade from 'react-reveal/Fade'
 
@@ -13,11 +13,15 @@ export default function TechStack() {
                     <p>Some things I know that I can use to create projects.</p>
                 </div>
             </Fade>
-            <Fade cascade bottom>
+            <Fade bottom >
                 <div className="techstack_list">
                     <div className="techstack_box blue">
                         <img alt='flutter_logo' src={require('../../assets/svg/flutter.svg')} className="fa_icon" />
                         <p>Flutter</p>
+                    </div>
+                    <div className="techstack_box orange">
+                        <img alt='firebase_logo' src={require('../../assets/svg/firebase.svg')} className="fa_icon" />
+                        <p>Firebase</p>
                     </div>
                     <div className="techstack_box orange">
                         <FontAwesomeIcon icon={faJava} color="orange" fixedWidth className="fa_icon" />
@@ -50,10 +54,6 @@ export default function TechStack() {
                     <div className="techstack_box red">
                         <FontAwesomeIcon icon={faDatabase} color="#ffa9a9" fixedWidth className="fa_icon" />
                         <p>MS SQL</p>
-                    </div>
-                    <div className="techstack_box orange">
-                        <img alt='firebase_logo' src={require('../../assets/svg/firebase.svg')} className="fa_icon" />
-                        <p>Firebase</p>
                     </div>
                     <div className="techstack_box blue">
                         <FontAwesomeIcon icon={faReact} color="#b0e6ff" fixedWidth className="fa_icon" />
