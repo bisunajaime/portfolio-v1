@@ -9,7 +9,7 @@ function AboutMe() {
         <section className="about_me" id="home">
             <Fade><img src={require('../../assets/images/main_image.png')} alt="Main_Image" /></Fade>
             <div className="main_info">
-                <Fade bottom cascade>
+                <Fade bottom>
                     <div className="my_info">
                         <h1>Hello, I'm <br />Jaime Bisuña</h1>
                         <p>21 year old Junior Software Developer from <span id="csb">De La Salle - College of Saint
@@ -21,7 +21,7 @@ function AboutMe() {
                     and <span id="dsc">Developer Student Clubs Philippines</span></p>
                     </div>
                 </Fade>
-                <Fade bottom cascade>
+                <Fade bottom>
                     <div className="socials" target='_blank' rel="noopener">
                         <a href="https://github.com/jose-bamboo" className="circle" target="_blank" rel="noopener noreferrer">
                             <i><FontAwesomeIcon icon={faGithub} size="2x" color="black" /></i>

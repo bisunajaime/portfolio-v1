@@ -10,7 +10,7 @@ function Projects() {
     return (
         <section className="project_body" id='projects'>
             <Fade cascade bottom>
-                <div className='head_project'>
+                <div className='header'>
                     <h1>Projects</h1>
                 </div>
             </Fade>

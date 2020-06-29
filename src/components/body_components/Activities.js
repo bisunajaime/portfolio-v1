@@ -4,7 +4,7 @@ function Activities() {
     return (
         <section className='activities' id='activities'>
             <Fade cascade bottom>
-                <div className='activities_header'>
+                <div className='header'>
                     <h1>Activities</h1>
                     <p>Some of the activities I have done, including some workshops I attended.</p>
                 </div>

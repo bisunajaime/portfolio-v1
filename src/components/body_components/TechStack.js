@@ -8,7 +8,7 @@ export default function TechStack() {
     return (
         <section className="techstack" id="techstack">
             <Fade cascade bottom>
-                <div className="techstack_title">
+                <div className="header">
                     <h1>Tech Stack</h1>
                     <p>Some things I know that I can use to create projects.</p>
                 </div>
