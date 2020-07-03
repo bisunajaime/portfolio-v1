@@ -36,8 +36,8 @@ class Header extends Component {
                     <a href="#projects">Projects</a>
                     <a href="#activities">Activities</a>
                     <a href="#organizations">Organizations</a>
-                    <a href="#certificates">Certificates</a>
-                    <a href='#contact' className='contact'>Contact</a>
+                    {/* <a href="#certificates">Certificates</a>
+                    <a href='#contact' className='contact'>Contact</a> */}
                 </div>
             </nav>
         )

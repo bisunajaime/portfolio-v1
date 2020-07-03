@@ -7,7 +7,7 @@ import Fade from 'react-reveal/Fade'
 function AboutMe() {
     return (
         <section className="about_me" id="home">
-            <Fade><img src={require('../../assets/images/main_image.png')} alt="Main_Image" /></Fade>
+            <Fade bottom><img src={require('../../assets/images/main_image.png')} alt="Main_Image" /></Fade>
             <div className="main_info">
                 <Fade bottom>
                     <div className="my_info">

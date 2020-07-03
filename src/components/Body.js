@@ -15,7 +15,7 @@ const Body = () => {
             <Projects />
             <Activities />
             <Organizations />
-            <Certificates />
+            {/* <Certificates /> */}
         </main>
     )
 }
