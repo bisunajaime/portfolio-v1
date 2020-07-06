@@ -25,6 +25,7 @@ function ProjectsList() {
             <ProjectItem name="WhatsCookn" src={require("../../assets/images/whatscookn.png")} id="whatscookn" />
             <ProjectItem name="BayanihanPH" src={require("../../assets/images/bayanihanph.png")} id="bayanihanph" />
             <ProjectItem name="Covid19-Tracker" src={require("../../assets/images/covidtracker.png")} id="covidtracker" />
+            <ProjectItem name="TMDB" src={require("../../assets/images/tmdb.png")} id="tmdb" />
             {/* <ProjectItem name="Travel Design" src={require("../../assets/images/uichallenge.png")} id="traveldesign" />
             <ProjectItem name="Furniture Design" src={require("../../assets/images/furnituredesign.png")} id="furnituredesign" /> */}
         </div>

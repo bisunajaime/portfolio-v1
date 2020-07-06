@@ -762,6 +762,13 @@ nav {
                 }
             }
 
+            &.tmdb {
+                background: #7a7a7a;
+                a {
+                    color: #7a7a7a;
+                }
+            }
+
             &.covidtracker {
                 background: #c3daff;
 
@@ -817,6 +824,10 @@ nav {
 
         &.bayanihanph {
             background: #e5b8ff;
+        }
+
+        &.tmdb {
+            background: #7a7a7a;
         }
 
         &.whatscookn {
@@ -896,6 +907,10 @@ nav {
                     color: #e5b8ff;
                 }
 
+                &.tmdb {
+                    color: #7a7a7a;
+                }
+
                 &.whatscookn {
                     color: #fff7b1;
                 }
@@ -936,6 +951,10 @@ nav {
 
                 &.bayanihanph {
                     color: #e5b8ff;
+                }
+
+                &.tmdb {
+                    color: #7a7a7a;
                 }
 
                 &.whatscookn {
@@ -989,6 +1008,18 @@ nav {
                         background-color: #eba9ff;
                         color: black;
                     }
+                }
+
+                &.tmdb {
+                    color: white;
+                    border: 1px solid white;
+                    transition: background 0.25s;
+
+                    &:hover {
+                        background-color: white;
+                        color: black;
+                    }
+
                 }
 
                 &.whatscookn {
@@ -1122,6 +1153,10 @@ nav {
 
                 img {
                     height: 100%;
+                }
+
+                &.tmdb {
+                    background: #7a7a7a;
                 }
 
                 &.whatscookn {
