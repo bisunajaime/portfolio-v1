@@ -87,6 +87,28 @@ const projects = {
             'twelve.png',
         ]
     },
+    'traveldesign': {
+        'title': 'Travel App UI',
+        'description': <p>Travel App UI made with <span className="flutter">Flutter</span> trying out different kinds of animations the framework offers.</p>,
+        'urls': {
+            'github': 'link'
+        },
+        'images': [
+            'first.png',
+            'second.png'
+        ]
+    },
+    'furnituredesign': {
+        'title': 'Furniture Shop UI',
+        'description': <p>Furniture Shop UI made with <span className='flutter'>Flutter</span> trying out the speed and performance of animations.</p>,
+        'urls': {
+            'github': 'link'
+        },
+        'images': [
+            'first.png',
+            'second.png'
+        ],
+    }
 }
 
 export default projects

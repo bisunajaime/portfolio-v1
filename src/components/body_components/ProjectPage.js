@@ -58,7 +58,7 @@ function ProjectPage() {
             </Flickity>
         } else {
             return <div className={`showcase_left_grid ${id} demo`}>
-                <ReactPlayer url={require(`../../assets/demo/${id}_demo.mp4`)} width='100%' height='100%' controls={true} />
+                <ReactPlayer muted={true} url={require(`../../assets/demo/${id}_demo.mp4`)} width='100%' height='100%' controls={true} />
             </div>
         }
     }

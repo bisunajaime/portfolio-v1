@@ -971,6 +971,14 @@ nav i {
   color: #ffd98d;
 }
 
+.projects .projects_list .project_item.traveldesign {
+  background: #fba8ff;
+}
+
+.projects .projects_list .project_item.traveldesign a {
+  color: #fba8ff;
+}
+
 .projects .projects_list .project_item.bayanihanph {
   background: #bfa1ff;
 }
@@ -993,6 +1001,14 @@ nav i {
 
 .projects .projects_list .project_item.covidtracker a {
   color: #c3daff;
+}
+
+.projects .projects_list .project_item.furnituredesign {
+  background: #5371f7;
+}
+
+.projects .projects_list .project_item.furnituredesign a {
+  color: #5371f7;
 }
 
 .projects .projects_list .project_item.needl {
@@ -1046,6 +1062,10 @@ nav i {
   background: #6e89ff;
 }
 
+.showcase .showcase_left_grid.furnituredesign {
+  background: #5371f7;
+}
+
 .showcase .showcase_left_grid.bayanihanph {
   background: #e5b8ff;
 }
@@ -1056,6 +1076,10 @@ nav i {
 
 .showcase .showcase_left_grid.whatscookn {
   background: #fff7b1;
+}
+
+.showcase .showcase_left_grid.traveldesign {
+  background: #fba8ff;
 }
 
 .showcase .showcase_left_grid .flickity-page-dots {
@@ -1149,6 +1173,10 @@ nav i {
   color: #6e89ff;
 }
 
+.showcase .showcase_right_grid .showcase_title a.furnituredesign {
+  color: #5371f7;
+}
+
 .showcase .showcase_right_grid .showcase_title a.bayanihanph {
   color: #e5b8ff;
 }
@@ -1159,6 +1187,10 @@ nav i {
 
 .showcase .showcase_right_grid .showcase_title a.whatscookn {
   color: #fff7b1;
+}
+
+.showcase .showcase_right_grid .showcase_title a.traveldesign {
+  color: #fba8ff;
 }
 
 @media screen and (min-width: 1024px) {
@@ -1197,6 +1229,10 @@ nav i {
   color: #a1b2ff;
 }
 
+.showcase .showcase_right_grid .showcase_details span.furnituredesign {
+  color: #5371f7;
+}
+
 .showcase .showcase_right_grid .showcase_details span.bayanihanph {
   color: #e5b8ff;
 }
@@ -1207,6 +1243,10 @@ nav i {
 
 .showcase .showcase_right_grid .showcase_details span.whatscookn {
   color: #fff7b1;
+}
+
+.showcase .showcase_right_grid .showcase_details span.traveldesign {
+  background: #fba8ff;
 }
 
 .showcase .showcase_right_grid .showcase_details span.flutter {
@@ -1283,6 +1323,18 @@ nav i {
   color: black;
 }
 
+.showcase .showcase_right_grid .showcase_details button.traveldesign {
+  color: #fba8ff;
+  border: 1px solid #fba8ff;
+  -webkit-transition: background 0.25s;
+  transition: background 0.25s;
+}
+
+.showcase .showcase_right_grid .showcase_details button.traveldesign:hover {
+  background-color: #fba8ff;
+  color: black;
+}
+
 .showcase .showcase_right_grid .showcase_details button.covidtracker {
   color: #a1b2ff;
   border: 1px solid #a1b2ff;
@@ -1292,6 +1344,18 @@ nav i {
 
 .showcase .showcase_right_grid .showcase_details button.covidtracker:hover {
   background-color: #a1b2ff;
+  color: black;
+}
+
+.showcase .showcase_right_grid .showcase_details button.furnituredesign {
+  color: #5371f7;
+  border: 1px solid #5371f7;
+  -webkit-transition: background .25s;
+  transition: background .25s;
+}
+
+.showcase .showcase_right_grid .showcase_details button.furnituredesign:hover {
+  background-color: #5371f7;
   color: black;
 }
 
@@ -1462,6 +1526,10 @@ nav i {
 
 .project_body .list_projects .project_object .project_image.covidtracker {
   background: #a1b2ff;
+}
+
+.project_body .list_projects .project_object .project_image.furnituredesign {
+  background: #5371f7;
 }
 
 .project_body .list_projects .project_object .project_image.needl {

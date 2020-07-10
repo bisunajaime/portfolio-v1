@@ -722,6 +722,13 @@ nav {
                     color: #ffd98d;
                 }
             }
+            &.traveldesign {
+                background: #fba8ff;
+
+                a {
+                    color: #fba8ff;
+                }
+            }
 
             &.bayanihanph {
                 background: #bfa1ff;
@@ -743,6 +750,13 @@ nav {
 
                 a {
                     color: #c3daff;
+                }
+            }
+            &.furnituredesign {
+                background: #5371f7;
+
+                a {
+                    color: #5371f7;
                 }
             }
 
@@ -791,6 +805,10 @@ nav {
             background: #6e89ff;
         }
 
+         &.furnituredesign {
+            background: #5371f7;
+        }
+
         &.bayanihanph {
             background: #e5b8ff;
         }
@@ -801,6 +819,10 @@ nav {
 
         &.whatscookn {
             background: #fff7b1;
+        }
+
+        &.traveldesign {
+            background: #fba8ff;
         }
 
         .flickity-page-dots {
@@ -871,6 +893,9 @@ nav {
                 &.covidtracker {
                     color: #6e89ff;
                 }
+                &.furnituredesign {
+                    color: #5371f7;
+                }
 
                 &.bayanihanph {
                     color: #e5b8ff;
@@ -882,6 +907,10 @@ nav {
 
                 &.whatscookn {
                     color: #fff7b1;
+                }
+
+                &.traveldesign {
+                    color: #fba8ff;
                 }
             }
 
@@ -916,6 +945,8 @@ nav {
 
                 &.covidtracker {
                     color: #a1b2ff;
+                } &.furnituredesign {
+                    color: #5371f7;
                 }
 
                 &.bayanihanph {
@@ -928,6 +959,9 @@ nav {
 
                 &.whatscookn {
                     color: #fff7b1;
+                }
+                &.traveldesign {
+                    background: #fba8ff;
                 }
 
                 &.flutter {
@@ -1001,6 +1035,17 @@ nav {
                     }
                 }
 
+                &.traveldesign {
+                    color: #fba8ff;
+                    border: 1px solid #fba8ff;
+                    transition: background 0.25s;
+
+                    &:hover {
+                        background-color: #fba8ff;
+                        color: black;
+                    }
+                }
+
                 &.covidtracker {
                     color: #a1b2ff;
                     border: 1px solid #a1b2ff;
@@ -1008,6 +1053,16 @@ nav {
 
                     &:hover {
                         background-color: #a1b2ff;
+                        color: black;
+                    }
+                }
+
+                 &.furnituredesign {
+                    color: #5371f7;
+                    border: 1px solid #5371f7;
+                    transition: background .25s;
+                    &:hover {
+                        background-color: #5371f7;
                         color: black;
                     }
                 }
@@ -1137,6 +1192,10 @@ nav {
 
                 &.covidtracker {
                     background: #a1b2ff;
+                }
+
+                 &.furnituredesign {
+                    background: #5371f7;
                 }
 
                 &.needl {
