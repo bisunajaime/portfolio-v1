@@ -66,9 +66,9 @@ const projects = {
     },
     'tmdb': {
         'title': 'TMDB',
-        'description': <p><span class="tmdb">TMDB</span> is a mobile application built using the TMDB API, provided the information of movie, tv shows, and actors that are trending.
+        'description': <p><span class="tmdb">TMDB</span> is a mobile application built using the TMDB API, provided the trending information of movie, tv shows, and actors.
                 <br /><br />
-        The app was built with <span class="flutter">Flutter</span>, while using <span class="flutter">BLOC</span> for state management.</p>,
+        The app was built with <span class="flutter">Flutter</span>, using <span class="flutter">BLOC</span> for state management.</p>,
         'urls': {
             'github': 'link'
         },

@@ -39,7 +39,7 @@ function ProjectItem(props) {
             <Fade bottom>
                 <div className="project_object">
                     <div className={`project_image ${id}`}>
-                        <img src={src} alt="project_image" alt="Project_Image" />
+                        <img src={src} alt="Project_Image" />
                     </div>
                     <div className="project_label">{name}</div>
                 </div>

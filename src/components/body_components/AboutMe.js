@@ -3,7 +3,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faFacebook, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons'
 import logo from '../../assets/images/logo.svg'
 
-import Fade from 'react-reveal/Fade'
 
 function AboutMe() {
     return (
@@ -16,7 +15,7 @@ function AboutMe() {
                         <img src={logo} alt="logo_here" />
                         <hr />
                     </div>
-                    <p>I am a Junior Software Developer from <b>the Philippines</b> who has a passion for developing mobile applications and believes that time is something that must not be wasted, but must be used wisely.
+                    <p>I am a Junior Software Developer from the <b>Philippines</b> who has a passion for developing mobile applications and believes that time is something that must not be wasted, but must be used wisely.
                     <br />
                         <br />
                     He has been part of school organizations such as <span id="aim">Association of Information
@@ -27,10 +26,10 @@ function AboutMe() {
                         <a href="https://github.com/jose-bamboo" className="circle" target="_blank" rel="noopener noreferrer">
                             <i><FontAwesomeIcon icon={faGithub} size="2x" color="black" /></i>
                         </a>
-                        <a className="circle" target='_blank' rel="noopener">
+                        <a className="circle" href="https://www.facebook.com/DefinitelyNotJaime25" target='_blank' rel="noopener noreferrer">
                             <i><FontAwesomeIcon icon={faFacebook} size="2x" color="black" /></i>
                         </a>
-                        <a className="circle" target='_blank' rel="noopener">
+                        <a className="circle" href="https://www.instagram.com/camboo_babbage/" target='_blank' rel="noopener noreferrer">
                             <i><FontAwesomeIcon icon={faInstagram} size="2x" color="black" /></i>
                         </a>
                         <a href='https://www.youtube.com/channel/UCNSVSg0tXQI9CnBOaOzRDIA' target='_blank' rel="noopener noreferrer" className="circle">

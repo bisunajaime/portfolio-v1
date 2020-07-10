@@ -1,9 +1,8 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faDatabase, } from '@fortawesome/free-solid-svg-icons'
 import { faJava, faJs, faHtml5, faCss3, faPhp, faReact, faAndroid, faNodeJs, faLaravel, faGithub, faBootstrap, faSass } from '@fortawesome/free-brands-svg-icons'
 import Fade from 'react-reveal/Fade'
-import anime from 'animejs'
 
 
 export default function TechStack() {

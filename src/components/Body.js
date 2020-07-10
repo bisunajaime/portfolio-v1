@@ -4,7 +4,6 @@ import TechStack from './body_components/TechStack'
 import Activities from './body_components/Activities'
 import Projects from './body_components/Projects'
 import Organizations from './body_components/Organizations'
-import Certificates from './body_components/Certificates'
 
 const Body = () => {
     return (

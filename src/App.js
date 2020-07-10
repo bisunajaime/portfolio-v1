@@ -3,7 +3,6 @@ import Header from './components/Header';
 import Body from './components/Body'
 import Footer from './components/Footer'
 import ProjectPage from './components/body_components/ProjectPage'
-import projects from './components/utils/projects'
 import './assets/css/style.scss';
 import './assets/css/flickity.css';
 import './assets/css/fullscreen.css';

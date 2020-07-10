@@ -36,7 +36,7 @@ function Activity(props) {
         <div className="activity">
             <h1>{title}</h1>
             <p>{description}</p>
-            <a href={link} target="_blank" rel="noopener">Link</a>
+            <a href={link} target="_blank" rel="noopener noreferrer">Link</a>
         </div>
     )
 }
