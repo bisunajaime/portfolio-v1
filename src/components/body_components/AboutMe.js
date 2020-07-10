@@ -1,27 +1,28 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faFacebook, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons'
+import logo from '../../assets/images/logo.svg'
 
 import Fade from 'react-reveal/Fade'
 
 function AboutMe() {
     return (
         <section className="about_me" id="home">
-            <Fade bottom><img src={require('../../assets/images/main_image.png')} alt="Main_Image" /></Fade>
             <div className="main_info">
-                <Fade bottom>
-                    <div className="my_info">
-                        <h1>Hello, I'm <br />Jaime Bisuña</h1>
-                        <p>21 year old Junior Software Developer from <span id="csb">De La Salle - College of Saint
-                        Benilde</span> who believes that time is something that must not be wasted, but must be used wisely.
+                <div className="my_info">
+                    <h1>Hello, I'm <br />Jaime Bisuña</h1>
+                    <div className="divider">
+                        <hr />
+                        <img src={logo} alt="logo_here" />
+                        <hr />
+                    </div>
+                    <p>I am a Junior Software Developer from <b>the Philippines</b> who has a passion for developing mobile applications and believes that time is something that must not be wasted, but must be used wisely.
                     <br />
-                            <br />
+                        <br />
                     He has been part of school organizations such as <span id="aim">Association of Information
                         Management </span>
                     and <span id="dsc">Developer Student Clubs Philippines</span></p>
-                    </div>
-                </Fade>
-                <Fade bottom>
+
                     <div className="socials" target='_blank' rel="noopener">
                         <a href="https://github.com/jose-bamboo" className="circle" target="_blank" rel="noopener noreferrer">
                             <i><FontAwesomeIcon icon={faGithub} size="2x" color="black" /></i>
@@ -36,7 +37,8 @@ function AboutMe() {
                             <i><FontAwesomeIcon icon={faYoutube} size="2x" color="black" /></i>
                         </a>
                     </div>
-                </Fade>
+                </div>
+
             </div>
 
         </section>

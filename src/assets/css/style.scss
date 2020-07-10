@@ -1,10 +1,15 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic");
 
+@font-face {
+    font-family: Gilroy;
+    src: url('../fonts/gilroy-extrabold.otf');
+}
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: "Montserrat";
+    font-family:  "Montserrat", Gilroy;
     scroll-behavior: smooth;
 }
 
@@ -157,37 +162,19 @@ nav {
     align-items: center;
     justify-content: space-evenly;
     padding-top: 5em;
+    height: 70vh;
 
     @media screen and (min-width: 1024px) {
-        display: grid;
+        align-items: center;
+        justify-content: center;
         height: 100vh;
-        grid-template-columns: 1fr 1fr;
+        // grid-template-columns: 1fr 1fr;
 
-        padding-top: 0em;
+        // padding-top: 0em;
     }
 
     @media screen and (min-width: 768px) and (max-width: 1024px) {
-        padding-top: 5em;
-    }
-
-    img {
-        position: relative;
-        height: auto;
-        width: 50%;
-
-        @media screen and (min-width: 1024px) {
-            grid-column: 2/2;
-            margin: auto;
-            height: auto;
-            width: 80%;
-        }
-
-        @media screen and (min-width: 768px) and (max-width: 1024px) {
-            grid-column: 2/2;
-            margin: auto;
-            height: auto;
-            width: 80%;
-        }
+        height: 80vh;
     }
 
     .main_info {
@@ -209,9 +196,7 @@ nav {
             justify-content: center;
 
             @media screen and (min-width: 1024px) {
-                align-items: flex-start;
-                justify-content: flex-start;
-                padding-left: 3em;
+                // padding-left: 3em;
             }
 
             h1 {
@@ -222,58 +207,32 @@ nav {
                 user-select: none;
 
                 @media screen and (min-width: 1024px) {
-                    text-align: left;
-                    font-size: 4em;
+                    font-size: 2.5em;
+                    padding-bottom: 0px;
                 }
 
                 @media screen and (min-width: 768px) and (max-width: 1024px) {
-                    font-size: 2.5em;
-                }
-            }
-
-            p {
-                line-height: 1.6;
-            }
-
-            button {
-                padding: 1em 2em;
-                font-weight: bold;
-                margin: 2em 0;
-                background: #282828;
-                color: white;
-                border: none;
-                cursor: pointer;
-                -webkit-box-shadow: 2px 2px 0px 0px #7a7a7a;
-                -moz-box-shadow: 2px 2px 0px 0px #7a7a7a;
-                box-shadow: 2px 2px 0px 0px #7a7a7a;
-                transition: background 0.25s;
-
-                &:hover {
-                    transition: background 0.25s;
-                    background: white;
-                    color: black;
-                    -webkit-box-shadow: 2px 2px 0px 0px #7a7a7a;
-                    -moz-box-shadow: 2px 2px 0px 0px #7a7a7a;
-                    box-shadow: 2px 2px 0px 0px #7a7a7a;
+                    font-size: 2em;
+                    padding-bottom: 0px;
                 }
             }
 
             p {
                 color: #cdcdcd;
                 font-size: 10px;
-                max-width: 80%;
+                max-width: 60%;
                 text-align: center;
                 user-select: none;
+                line-height: 1.6;
 
                 @media screen and (min-width: 1024px) {
-                    text-align: left;
-                    font-size: 1em;
-                    max-width: 100%;
+                    font-size: .8em;
+                    max-width: 40%;
                 }
 
                 @media screen and (min-width: 768px) and (max-width: 1024px) {
-                    font-size: 0.9em;
-                    max-width: 80%;
+                    font-size: 0.65em;
+                    max-width: 50%;
                 }
 
                 #csb {
@@ -298,54 +257,66 @@ nav {
             }
         }
 
-        .orgs {
-            display: flex;
-            align-items: center;
+        .divider {
+            display: none;
             justify-content: center;
-            padding: 2em 0;
+            align-items: center;
+            padding: 1em 0;
 
             @media screen and (min-width: 1024px) {
-                display: none;
+                display: flex;
             }
 
-            img {
-                height: 50%;
-                width: 50%;
+            @media screen and (min-width: 768px) and (max-width: 1024px) {
+                display: flex;
+            }
+            hr {
+                width: 4em;
+                margin: 0 1em;
+                color: white;
+                border: solid .5px white;
 
                 @media screen and (min-width: 1024px) {
-                    display: none;
+                    width: 100px;
                 }
 
                 @media screen and (min-width: 768px) and (max-width: 1024px) {
-                    height: 25%;
-                    width: 25%;
+                    width: 70px;
+                }
+            }
+            img {
+                height: 25px;
+                @media screen and (min-width: 1024px) {
+                    height: 40px;
+                }
+
+                @media screen and (min-width: 768px) and (max-width: 1024px) {
+                    height: 30px;
                 }
             }
         }
 
         .socials {
             display: flex;
-            align-items: center;
-            justify-content: space-evenly;
+                align-items: center;
+                justify-content: center;
             width: 80%;
-            max-width: 90%;
-            padding: 2em 0;
+            padding-top: 1em;
 
             @media screen and (min-width: 1024px) {
-                align-items: flex-start;
-                justify-content: flex-start;
+                justify-content: center;
                 width: 100%;
             }
 
             @media screen and (min-width: 768px) and (max-width: 1024px) {
                 align-items: center;
-                justify-content: space-evenly;
+                justify-content: center;
                 width: 70%;
             }
 
             .circle {
-                height: 40px;
-                width: 40px;
+                height: 35px;
+                width: 35px;
                 border-radius: 50%;
                 background-color: white;
                 -webkit-box-shadow: 2px 2px 0px 0px #7a7a7a;
@@ -355,17 +326,16 @@ nav {
                 text-decoration: none;
                 align-items: center;
                 justify-content: center;
+                    margin: 0 .5em;
 
                 @media screen and (min-width: 1024px) {
-                    margin-right: 1em;
-                    height: 50px;
-                    width: 50px;
+                    height: 45px;
+                    width: 45px;
                 }
 
                 @media screen and (min-width: 768px) and (max-width: 1024px) {
-                    margin-right: 1em;
-                    height: 60px;
-                    width: 60px;
+                    height: 40px;
+                    width: 40px;
                 }
 
                 i {
@@ -373,11 +343,11 @@ nav {
                     font-size: 0.6em;
 
                     @media screen and (min-width: 1024px) {
-                        font-size: 1em;
+                        font-size: .8em;
                     }
 
                     @media screen and (min-width: 768px) and (max-width: 1024px) {
-                        font-size: 0.9em;
+                        font-size: 0.7em;
                     }
                 }
             }

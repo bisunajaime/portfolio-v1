@@ -11,12 +11,13 @@ import 'flickity-fullscreen'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
+import projects from '../utils/projects'
 
 
-function ProjectPage(props) {
+function ProjectPage() {
     const [showDemo, setShowDemo] = useState(false)
     let { id } = useParams()
-    let { title, description, urls, images } = props.data[id]
+    let { title, description, urls, images } = projects[id]
     const sliderOptions = {
         pageDots: true,
         cellAlign: 'center',

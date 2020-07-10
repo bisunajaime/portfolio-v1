@@ -23,7 +23,7 @@ function App() {
           <Home />
         </Route>
         <Route path="/project/:id">
-          <ProjectPage data={projects} />
+          <ProjectPage />
         </Route>
         <Redirect to='/' />
       </Switch>
@@ -34,7 +34,7 @@ function App() {
 function Home() {
   return (
     <React.Fragment>
-      <Menu />
+      {/* <Menu /> */}
       <Header />
       <Body />
       <Footer />
