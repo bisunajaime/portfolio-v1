@@ -2,14 +2,14 @@
 
 @font-face {
     font-family: Gilroy;
-    src: url('../fonts/gilroy-extrabold.otf');
+    src: url("../fonts/gilroy-extrabold.otf");
 }
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family:  "Montserrat", Gilroy;
+    font-family: "Montserrat", Gilroy;
     scroll-behavior: smooth;
 }
 
@@ -66,7 +66,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding: 1em;
-    background: #282828;
+    background: #292929;
     position: fixed;
     z-index: 999;
 
@@ -115,6 +115,7 @@ nav {
                 text-decoration: none;
                 padding: 0 1em;
                 font-size: 0.8em;
+                font-weight: bold;
                 transition: background 0.25s;
 
                 &.contact {
@@ -204,7 +205,6 @@ nav {
                 text-align: center;
                 color: white;
                 padding-bottom: 10px;
-                user-select: none;
 
                 @media screen and (min-width: 1024px) {
                     font-size: 2.5em;
@@ -222,11 +222,10 @@ nav {
                 font-size: 10px;
                 max-width: 60%;
                 text-align: center;
-                user-select: none;
                 line-height: 1.6;
 
                 @media screen and (min-width: 1024px) {
-                    font-size: .8em;
+                    font-size: 0.8em;
                     max-width: 40%;
                 }
 
@@ -274,7 +273,7 @@ nav {
                 width: 4em;
                 margin: 0 1em;
                 color: white;
-                border: solid .5px white;
+                border: solid 0.5px white;
 
                 @media screen and (min-width: 1024px) {
                     width: 100px;
@@ -298,8 +297,8 @@ nav {
 
         .socials {
             display: flex;
-                align-items: center;
-                justify-content: center;
+            align-items: center;
+            justify-content: center;
             width: 80%;
             padding-top: 1em;
 
@@ -326,7 +325,7 @@ nav {
                 text-decoration: none;
                 align-items: center;
                 justify-content: center;
-                    margin: 0 .5em;
+                margin: 0 0.5em;
 
                 @media screen and (min-width: 1024px) {
                     height: 45px;
@@ -343,7 +342,7 @@ nav {
                     font-size: 0.6em;
 
                     @media screen and (min-width: 1024px) {
-                        font-size: .8em;
+                        font-size: 0.8em;
                     }
 
                     @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -989,7 +988,6 @@ nav {
                         background-color: white;
                         color: black;
                     }
-
                 }
 
                 &.whatscookn {

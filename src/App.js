@@ -34,7 +34,7 @@ function App() {
 function Home() {
   return (
     <React.Fragment>
-      {/* <Menu /> */}
+      <Menu />
       <Header />
       <Body />
       <Footer />
