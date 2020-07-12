@@ -69,6 +69,19 @@ nav {
     background: #292929;
     position: fixed;
     z-index: 999;
+    transition: background 0.25s ease;
+
+    &.dark {
+        background: #111111 !important;
+    }
+
+    @media screen and (min-width: 1024px) {
+        padding: 0;
+    }
+
+    @media screen and (min-width: 1248px) {
+        padding: 0 15%;
+    }
 
     img {
         width: 35px;
@@ -114,8 +127,7 @@ nav {
                 color: white;
                 text-decoration: none;
                 padding: 0 1em;
-                font-size: 0.8em;
-                font-weight: bold;
+                font-size: 0.75em;
                 transition: background 0.25s;
 
                 &.contact {
@@ -127,10 +139,6 @@ nav {
                         color: black;
                     }
                 }
-            }
-
-            &.active {
-                font-weight: bold;
             }
 
             &:hover {
@@ -269,6 +277,7 @@ nav {
             @media screen and (min-width: 768px) and (max-width: 1024px) {
                 display: flex;
             }
+
             hr {
                 width: 4em;
                 margin: 0 1em;
@@ -283,8 +292,10 @@ nav {
                     width: 70px;
                 }
             }
+
             img {
                 height: 25px;
+
                 @media screen and (min-width: 1024px) {
                     height: 40px;
                 }
@@ -733,6 +744,7 @@ nav {
 
             &.tmdb {
                 background: #7a7a7a;
+
                 a {
                     color: #7a7a7a;
                 }
@@ -1392,4 +1404,14 @@ footer {
 
 .show {
     display: block;
+}
+
+.carousel-cell-image {
+    transition: opacity 0.4s;
+    opacity: 0;
+}
+
+.carousel-cell-image.flickity-lazyloaded,
+.carousel-cell-image.flickity-lazyerror {
+    opacity: 1;
 }

@@ -12,7 +12,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import projects from '../utils/projects'
-
+import placeholder from '../../assets/images/placeholder.png'
 
 function ProjectPage() {
     const [showDemo, setShowDemo] = useState(false)
@@ -27,7 +27,7 @@ function ProjectPage() {
         prevNextButtons: true,
         setGallerySize: false,
         imagesLoaded: true,
-        lazyLoad: true
+        lazyLoad: true,
     }
     useEffect(() => {
 
@@ -54,7 +54,7 @@ function ProjectPage() {
                 reloadOnUpdate={true}
                 static
             >
-                {images.map((elem, i) => <img key={i} src={require(`../../assets/images/${id}/${elem}`)} data-flickity-lazyload={require(`../../assets/images/${id}/${elem}`)} alt="Image_Here" ></img>)}
+                {images.map((elem, i) => <img key={i} data-flickity-lazyload={require(`../../assets/images/${id}/${elem}`)} className="carousel-cell-image" src={placeholder} alt="Image_Here" ></img>)}
             </Flickity>
         } else {
             return <div className={`showcase_left_grid ${id} demo`}>

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import AboutMe from './body_components/AboutMe'
 import TechStack from './body_components/TechStack'
 import Activities from './body_components/Activities'

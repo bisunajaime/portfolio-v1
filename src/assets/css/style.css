@@ -90,6 +90,24 @@ nav {
   background: #292929;
   position: fixed;
   z-index: 999;
+  -webkit-transition: background 0.25s ease;
+  transition: background 0.25s ease;
+}
+
+nav.dark {
+  background: #111111 !important;
+}
+
+@media screen and (min-width: 1024px) {
+  nav {
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 1248px) {
+  nav {
+    padding: 0 15%;
+  }
 }
 
 nav img {
@@ -152,8 +170,7 @@ nav .menu_items {
     color: white;
     text-decoration: none;
     padding: 0 1em;
-    font-size: 0.8em;
-    font-weight: bold;
+    font-size: 0.75em;
     -webkit-transition: background 0.25s;
     transition: background 0.25s;
   }
@@ -164,9 +181,6 @@ nav .menu_items {
   nav .menu_items a.contact:hover {
     background: white;
     color: black;
-  }
-  nav .menu_items.active {
-    font-weight: bold;
   }
   nav .menu_items:hover {
     cursor: pointer;
@@ -1784,5 +1798,16 @@ footer p {
 
 .show {
   display: block;
+}
+
+.carousel-cell-image {
+  -webkit-transition: opacity 0.4s;
+  transition: opacity 0.4s;
+  opacity: 0;
+}
+
+.carousel-cell-image.flickity-lazyloaded,
+.carousel-cell-image.flickity-lazyerror {
+  opacity: 1;
 }
 /*# sourceMappingURL=style.css.map */
