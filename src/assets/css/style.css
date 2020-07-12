@@ -100,7 +100,7 @@ nav.dark {
 
 @media screen and (min-width: 1024px) {
   nav {
-    padding: 0;
+    padding: 1em;
   }
 }
 
@@ -985,6 +985,14 @@ nav i {
   color: #ffd98d;
 }
 
+.projects .projects_list .project_item.traveldesign {
+  background: #fba8ff;
+}
+
+.projects .projects_list .project_item.traveldesign a {
+  color: #fba8ff;
+}
+
 .projects .projects_list .project_item.bayanihanph {
   background: #bfa1ff;
 }
@@ -1007,6 +1015,14 @@ nav i {
 
 .projects .projects_list .project_item.covidtracker a {
   color: #c3daff;
+}
+
+.projects .projects_list .project_item.furnituredesign {
+  background: #5371f7;
+}
+
+.projects .projects_list .project_item.furnituredesign a {
+  color: #5371f7;
 }
 
 .projects .projects_list .project_item.needl {
@@ -1060,6 +1076,10 @@ nav i {
   background: #6e89ff;
 }
 
+.showcase .showcase_left_grid.furnituredesign {
+  background: #5371f7;
+}
+
 .showcase .showcase_left_grid.bayanihanph {
   background: #e5b8ff;
 }
@@ -1070,6 +1090,10 @@ nav i {
 
 .showcase .showcase_left_grid.whatscookn {
   background: #fff7b1;
+}
+
+.showcase .showcase_left_grid.traveldesign {
+  background: #fba8ff;
 }
 
 .showcase .showcase_left_grid .flickity-page-dots {
@@ -1163,6 +1187,10 @@ nav i {
   color: #6e89ff;
 }
 
+.showcase .showcase_right_grid .showcase_title a.furnituredesign {
+  color: #5371f7;
+}
+
 .showcase .showcase_right_grid .showcase_title a.bayanihanph {
   color: #e5b8ff;
 }
@@ -1173,6 +1201,10 @@ nav i {
 
 .showcase .showcase_right_grid .showcase_title a.whatscookn {
   color: #fff7b1;
+}
+
+.showcase .showcase_right_grid .showcase_title a.traveldesign {
+  color: #fba8ff;
 }
 
 @media screen and (min-width: 1024px) {
@@ -1211,6 +1243,10 @@ nav i {
   color: #a1b2ff;
 }
 
+.showcase .showcase_right_grid .showcase_details span.furnituredesign {
+  color: #5371f7;
+}
+
 .showcase .showcase_right_grid .showcase_details span.bayanihanph {
   color: #e5b8ff;
 }
@@ -1221,6 +1257,10 @@ nav i {
 
 .showcase .showcase_right_grid .showcase_details span.whatscookn {
   color: #fff7b1;
+}
+
+.showcase .showcase_right_grid .showcase_details span.traveldesign {
+  background: #fba8ff;
 }
 
 .showcase .showcase_right_grid .showcase_details span.flutter {
@@ -1297,6 +1337,18 @@ nav i {
   color: black;
 }
 
+.showcase .showcase_right_grid .showcase_details button.traveldesign {
+  color: #fba8ff;
+  border: 1px solid #fba8ff;
+  -webkit-transition: background 0.25s;
+  transition: background 0.25s;
+}
+
+.showcase .showcase_right_grid .showcase_details button.traveldesign:hover {
+  background-color: #fba8ff;
+  color: black;
+}
+
 .showcase .showcase_right_grid .showcase_details button.covidtracker {
   color: #a1b2ff;
   border: 1px solid #a1b2ff;
@@ -1306,6 +1358,18 @@ nav i {
 
 .showcase .showcase_right_grid .showcase_details button.covidtracker:hover {
   background-color: #a1b2ff;
+  color: black;
+}
+
+.showcase .showcase_right_grid .showcase_details button.furnituredesign {
+  color: #5371f7;
+  border: 1px solid #5371f7;
+  -webkit-transition: background 0.25s;
+  transition: background 0.25s;
+}
+
+.showcase .showcase_right_grid .showcase_details button.furnituredesign:hover {
+  background-color: #5371f7;
   color: black;
 }
 
@@ -1478,6 +1542,10 @@ nav i {
   background: #a1b2ff;
 }
 
+.project_body .list_projects .project_object .project_image.furnituredesign {
+  background: #5371f7;
+}
+
 .project_body .list_projects .project_object .project_image.needl {
   background: #ff9797;
 }
@@ -1529,7 +1597,7 @@ nav i {
 }
 
 .activities .activities_list {
-  max-width: 95%;
+  max-width: 90%;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1548,7 +1616,13 @@ nav i {
 
 @media screen and (min-width: 1024px) {
   .activities .activities_list {
-    max-width: 70%;
+    max-width: 90%;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .activities .activities_list {
+    max-width: 80%;
   }
 }
 
@@ -1561,9 +1635,41 @@ nav i {
 .activities .activities_list .activity {
   background: #292929;
   margin: 0.5em;
-  height: 150px;
+  height: auto;
   width: 150px;
-  padding: 0 1em;
+  padding: 0em;
+  -webkit-transition: 0.25s ease;
+  transition: 0.25s ease;
+  -webkit-box-shadow: 0px 0px 0px 0px #b3b3b3;
+  box-shadow: 0px 0px 0px 0px #b3b3b3;
+}
+
+@media screen and (min-width: 1024px) {
+  .activities .activities_list .activity {
+    width: 400px;
+  }
+  .activities .activities_list .activity:hover {
+    -webkit-box-shadow: 5px 5px 0px 0px #9b9dff;
+    box-shadow: 5px 5px 0px 0px #9b9dff;
+    -webkit-transform: translate(-1%, -1%);
+            transform: translate(-1%, -1%);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .activities .activities_list .activity {
+    width: 300px;
+  }
+  .activities .activities_list .activity:hover {
+    -webkit-transform: translate(-1%, -1%);
+            transform: translate(-1%, -1%);
+    -webkit-box-shadow: 5px 5px 0px 0px #9b9dff;
+    box-shadow: 5px 5px 0px 0px #9b9dff;
+  }
+}
+
+.activities .activities_list .activity a {
+  text-decoration: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1571,49 +1677,73 @@ nav i {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-shadow: 2px 2px 0px 0px #cbffa9;
-  box-shadow: 2px 2px 0px 0px #cbffa9;
 }
 
 @media screen and (min-width: 1024px) {
-  .activities .activities_list .activity {
-    height: 250px;
-    width: 250px;
+  .activities .activities_list .activity a {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.activities .activities_list .activity a img {
+  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100px;
+}
+
+@media screen and (min-width: 1024px) {
+  .activities .activities_list .activity a img {
+    height: 300px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-  .activities .activities_list .activity {
-    height: 250px;
-    width: 250px;
+  .activities .activities_list .activity a img {
+    height: 200px;
   }
 }
 
-.activities .activities_list .activity h1 {
+.activities .activities_list .activity a .description {
+  padding: 0.5em;
+}
+
+@media screen and (min-width: 1024px) {
+  .activities .activities_list .activity a .description {
+    padding: 1em;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .activities .activities_list .activity a .description {
+    padding: 1.5em 1em;
+  }
+}
+
+.activities .activities_list .activity a .description h1 {
   font-size: 0.6em;
   color: white;
-  padding: 1em 0;
+  padding: 0.5em 0;
 }
 
 @media screen and (min-width: 1024px) {
-  .activities .activities_list .activity h1 {
-    font-size: 1em;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  .activities .activities_list .activity h1 {
+  .activities .activities_list .activity a .description h1 {
     font-size: 1.2em;
   }
 }
 
-.activities .activities_list .activity p {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .activities .activities_list .activity a .description h1 {
+    padding: 0.2em 0;
+    font-size: 1em;
+  }
+}
+
+.activities .activities_list .activity a .description p {
   line-height: 1.6;
   color: white;
   font-size: 0.5em;
@@ -1621,18 +1751,18 @@ nav i {
 }
 
 @media screen and (min-width: 1024px) {
-  .activities .activities_list .activity p {
+  .activities .activities_list .activity a .description p {
     font-size: 0.75em;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-  .activities .activities_list .activity p {
+  .activities .activities_list .activity a .description p {
     font-size: 0.65em;
   }
 }
 
-.activities .activities_list .activity a {
+.activities .activities_list .activity a .description a {
   font-size: 0.4em;
   color: #cbffa9;
   text-decoration: none;
@@ -1644,13 +1774,13 @@ nav i {
 }
 
 @media screen and (min-width: 1024px) {
-  .activities .activities_list .activity a {
+  .activities .activities_list .activity a .description a {
     font-size: 0.75em;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-  .activities .activities_list .activity a {
+  .activities .activities_list .activity a .description a {
     font-size: 0.65em;
   }
 }

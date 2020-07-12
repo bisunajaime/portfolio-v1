@@ -14,6 +14,7 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import projects from '../utils/projects'
 import placeholder from '../../assets/images/placeholder.png'
 
+
 function ProjectPage() {
     const [showDemo, setShowDemo] = useState(false)
     let { id } = useParams()
@@ -27,7 +28,7 @@ function ProjectPage() {
         prevNextButtons: true,
         setGallerySize: false,
         imagesLoaded: true,
-        lazyLoad: true,
+        lazyLoad: true
     }
     useEffect(() => {
 
@@ -58,7 +59,7 @@ function ProjectPage() {
             </Flickity>
         } else {
             return <div className={`showcase_left_grid ${id} demo`}>
-                <ReactPlayer url={require(`../../assets/demo/${id}_demo.mp4`)} width='100%' height='100%' controls={true} />
+                <ReactPlayer muted={true} url={require(`../../assets/demo/${id}_demo.mp4`)} width='100%' height='100%' controls={true} />
             </div>
         }
     }
@@ -69,7 +70,7 @@ function ProjectPage() {
             {renderVideo()}
             <div className="showcase_right_grid">
                 <div className="showcase_title">
-                    <Link to='/' className={id}>
+                    <Link to='/' id={id} className={id}>
                         <FontAwesomeIcon icon={faArrowLeft} size="1x" />
                     </Link>
                     <h1>{title}</h1>

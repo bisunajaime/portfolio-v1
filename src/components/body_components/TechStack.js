@@ -1,6 +1,8 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faDatabase, } from '@fortawesome/free-solid-svg-icons'
+import firebase from '../../assets/svg/firebase.svg'
+import flutter from '../../assets/svg/flutter.svg'
 import { faJava, faJs, faHtml5, faCss3, faPhp, faReact, faAndroid, faNodeJs, faLaravel, faGithub, faBootstrap, faSass } from '@fortawesome/free-brands-svg-icons'
 import Fade from 'react-reveal/Fade'
 
@@ -18,7 +20,7 @@ export default function TechStack() {
             <Fade bottom >
                 <div className="techstack_list" id="info" >
                     <div className="techstack_box blue" id='box'>
-                        <img alt='flutter_logo' src={require('../../assets/svg/flutter.svg')} className="fa_icon" />
+                        <img alt='flutter_logo' src={flutter} className="fa_icon" />
                         <p>Flutter</p>
                         <div className='lang_info hide' id='flutter_knowledge'>
                             <h1>50%</h1>
@@ -26,7 +28,7 @@ export default function TechStack() {
                         </div>
                     </div>
                     <div className="techstack_box orange" >
-                        <img alt='firebase_logo' src={require('../../assets/svg/firebase.svg')} className="fa_icon" />
+                        <img alt='firebase_logo' src={firebase} className="fa_icon" />
                         <p>Firebase</p>
                         <div className='lang_info hide' id='flutter_knowledge'>
                             <h1>50%</h1>

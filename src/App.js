@@ -13,11 +13,8 @@ import {
   Route,
   Redirect,
 } from "react-router-dom";
-import './components/utils/events'
 
 function App() {
-
-
   return (
     <Router>
       <Switch>
@@ -34,7 +31,6 @@ function App() {
 }
 
 function Home() {
-
   return (
     <React.Fragment>
       <Menu />
