@@ -15,10 +15,10 @@ function AboutMe() {
                         <img src={logo} alt="logo_here" />
                         <hr />
                     </div>
-                    <p>I am a Junior Software Developer from the <b>Philippines</b> who has a passion for developing mobile applications and believes that time is something that must not be wasted, but must be used wisely.
+                    <p>I am a <b>Software Developer</b> who has a passion for developing mobile/web applications and believes that time is something that must not be wasted, but must be used wisely.
                     <br />
                         <br />
-                    He has been part of school organizations such as <span id="aim">Association of Information
+                    I have been part of school organizations such as <span id="aim">Association of Information
                         Management </span>
                     and <span id="dsc">Developer Student Clubs Philippines</span></p>
 

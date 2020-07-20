@@ -312,7 +312,7 @@ nav i {
 }
 
 .about_me .main_info .my_info p {
-  color: #cdcdcd;
+  color: white;
   font-size: 10px;
   max-width: 60%;
   text-align: center;
@@ -321,7 +321,7 @@ nav i {
 
 @media screen and (min-width: 1024px) {
   .about_me .main_info .my_info p {
-    font-size: 0.8em;
+    font-size: 0.9em;
     max-width: 40%;
   }
 }

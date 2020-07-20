@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faDatabase, } from '@fortawesome/free-solid-svg-icons'
 import firebase from '../../assets/svg/firebase.svg'
 import flutter from '../../assets/svg/flutter.svg'
-import { faJava, faJs, faHtml5, faCss3, faPhp, faReact, faAndroid, faNodeJs, faLaravel, faGithub, faBootstrap, faSass } from '@fortawesome/free-brands-svg-icons'
+import { faJava, faJs, faHtml5, faCss3, faPhp, faReact, faAndroid, faNodeJs, faLaravel, faGithub, faBootstrap, faSass, faWordpressSimple, } from '@fortawesome/free-brands-svg-icons'
 import Fade from 'react-reveal/Fade'
 
 
@@ -94,6 +94,14 @@ export default function TechStack() {
                     <div className="techstack_box purple" >
                         <FontAwesomeIcon icon={faPhp} color="#dfa8ff" fixedWidth className="fa_icon" />
                         <p>PHP</p>
+                        <div className='lang_info hide' id='flutter_knowledge'>
+                            <h1>50%</h1>
+                            <p>Flutter</p>
+                        </div>
+                    </div>
+                    <div className="techstack_box white" >
+                        <FontAwesomeIcon icon={faWordpressSimple} color="white" fixedWidth className="fa_icon" />
+                        <p>Wordpress</p>
                         <div className='lang_info hide' id='flutter_knowledge'>
                             <h1>50%</h1>
                             <p>Flutter</p>

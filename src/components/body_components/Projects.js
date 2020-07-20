@@ -37,7 +37,7 @@ function ProjectsList() {
 function ProjectItem(props) {
     let { name, src, id } = props
     return (
-        <Link to={`/project/${id}`} className="link">
+        <Link to={`/${id}`} className="link">
             <Fade bottom>
                 <div className="project_object">
                     <div className={`project_image ${id}`}>

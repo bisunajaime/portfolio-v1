@@ -21,7 +21,7 @@ function App() {
         <Route exact path="/">
           <Home />
         </Route>
-        <Route path="/project/:id">
+        <Route path="/:id">
           <ProjectPage />
         </Route>
         <Redirect to='/' />
