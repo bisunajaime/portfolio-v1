@@ -939,7 +939,7 @@ nav {
         padding: 3em 0;
 
         @media screen and (min-width: 1024px) {
-            max-width: 80%;
+            max-width: 70%;
         }
 
         @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -958,8 +958,8 @@ nav {
                 transition: 0.25s;
 
                 @media screen and (min-width: 1024px) {
-                    height: 300px;
-                    width: 300px;
+                    height: 200px;
+                    width: 200px;
 
                     &:hover {
                         transition: 0.25s;
@@ -1022,7 +1022,7 @@ nav {
                 font-weight: bold;
 
                 @media screen and (min-width: 1024px) {
-                    font-size: 1em;
+                    font-size: .8em;
                 }
 
                 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -1045,84 +1045,66 @@ nav {
     }
 }
 
-.activities {
+
+.events {
     height: auto;
     background: #111111;
-    padding: 1em 0;
-
-    .activities_list {
-        max-width: 100%;
-        margin: auto;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: center;
-        padding-bottom: 2em;
-
-        @media screen and (min-width: 1024px) {
-            max-width: 90%;
-        }
-        @media screen and (min-width: 1600px) {
-            max-width: 80%;
-        }
-
-        @media screen and (min-width: 768px) and (max-width: 1024px) {
-            max-width: 95%;
-        }
-
-        .activity {
-            background: #292929;
-            margin: 0.5em;
-            height: auto;
-            width: 150px;
-            padding: 0em;
-            transition: 0.25s ease;
-            -webkit-box-shadow: 0px 0px 0px 0px #b3b3b3;
-            -moz-box-shadow: 0px 0px 0px 0px #b3b3b3;
-            box-shadow: 0px 0px 0px 0px #b3b3b3;
-
+    .event {
+        height: 100%;
+        padding: 1em;
+        .hosted_body {
+            height: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-evenly;
+                    margin: auto;
             @media screen and (min-width: 1024px) {
-                width: 400px;
-
-                &:hover {
-                    -webkit-box-shadow: 5px 5px 0px 0px #9b9dff;
-                    -moz-box-shadow: 5px 5px 0px 0px #9b9dff;
-                    box-shadow: 5px 5px 0px 0px #9b9dff;
-                    transform: translate(-1%, -1%);
-                }
+                max-width: 90%;
+                justify-content: center;
+                margin: auto;
             }
-
-            @media screen and (min-width: 768px) and (max-width: 1024px) {
-                width: 300px;
-
-                &:hover {
-                    transform: translate(-1%, -1%);
-                    -webkit-box-shadow: 5px 5px 0px 0px #9b9dff;
-                    -moz-box-shadow: 5px 5px 0px 0px #9b9dff;
-                    box-shadow: 5px 5px 0px 0px #9b9dff;
-                }
-            }
-
+            
             a {
+                // background: #292929;
                 text-decoration: none;
                 display: flex;
-                flex-direction: column;
+                flex-direction: column;    
+                
+            
+                &.event_item {
+                    margin: 1em;
+                    height: auto;
+                    width: 300px;
+                    -webkit-box-shadow: 0px 0px 0px 0px white;
+                    -moz-box-shadow: 0px 0px 0px 0px white;
+                    box-shadow: 0px 0px 0px 0px white;
+                    transition: transform 0.25s ease, box-shadow .2s ease;
 
-                @media screen and (min-width: 1024px) {
-                    flex-direction: column;
-                }
-
-                @media screen and (min-width: 768px) and (max-width: 1024px) {
-                }
-
-                img {
-                    background-size: cover;
-                    object-fit: cover;
-                    width: 100%;
-                    height: 100px;
+                    
 
                     @media screen and (min-width: 1024px) {
-                        height: 300px;
+                        width: 350px;
+                        &:hover {
+                            -webkit-box-shadow: 5px 5px 0px 0px white;
+                            -moz-box-shadow: 5px 5px 0px 0px white;
+                            box-shadow: 5px 5px 0px 0px white;
+                            transform: translate(-1%, -1%);
+                        }
+                    }
+
+                    @media screen and (min-width: 768px) and (max-width: 1024px) {
+                        width: 350px;
+                        margin: 0.5em;
+                    }
+                }
+                img {
+                    height: 150px;
+                    background-size: cover;
+                    object-fit: cover;
+                    width: auto;
+                    @media screen and (min-width: 1024px) {
+                        height: 150px;
                     }
 
                     @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -1130,63 +1112,38 @@ nav {
                     }
                 }
 
-                .description {
-                    padding: 0.5em;
-
+                .event_label {
+                    padding: .5em;
                     @media screen and (min-width: 1024px) {
-                        padding: 1em;
-                    }
+                            padding: 1em;
+                        }
 
-                    @media screen and (min-width: 768px) and (max-width: 1024px) {
-                        padding: 1.5em 1em;
-                    }
-
-                    h1 {
-                        font-size: 0.6em;
+                        @media screen and (min-width: 768px) and (max-width: 1024px) {
+                            padding: .8em;
+                        }
+                    h2 {
                         color: white;
-                        padding: 0.5em 0;
-
+                        font-size: .8em;
+                        padding: .5em 0;
+                        color: rgb(148, 212, 255);
                         @media screen and (min-width: 1024px) {
                             font-size: 1.2em;
                         }
 
                         @media screen and (min-width: 768px) and (max-width: 1024px) {
-                            padding: 0.2em 0;
                             font-size: 1em;
                         }
                     }
-
                     p {
-                        line-height: 1.6;
                         color: white;
-                        font-size: 0.5em;
-                        text-align: left;
-
+                        font-size: 10px;
+                        line-height: 1.6;
                         @media screen and (min-width: 1024px) {
-                            font-size: 0.75em;
+                            font-size: .8em;
                         }
 
                         @media screen and (min-width: 768px) and (max-width: 1024px) {
-                            font-size: 0.65em;
-                        }
-                    }
-
-                    a {
-                        font-size: 0.4em;
-                        color: #cbffa9;
-                        text-decoration: none;
-                        outline: none;
-                        font-weight: bold;
-                        border: 1px solid #cbffa9;
-                        margin-top: 1em;
-                        padding: 0.1em 0.7em;
-
-                        @media screen and (min-width: 1024px) {
-                            font-size: 0.75em;
-                        }
-
-                        @media screen and (min-width: 768px) and (max-width: 1024px) {
-                            font-size: 0.65em;
+                            font-size: .7em;
                         }
                     }
                 }
@@ -1201,6 +1158,11 @@ nav {
 
     .organizations_list {
         padding: 5em 0;
+        display: flex;
+        justify-content: space-evenly;
+        max-width: 80%;
+        margin: auto;
+        flex-wrap: wrap;
 
         .organization {
             display: flex;
@@ -1317,4 +1279,8 @@ footer {
 .carousel-cell-image.flickity-lazyloaded,
 .carousel-cell-image.flickity-lazyerror {
     opacity: 1;
+}
+
+a {
+    border: none;
 }

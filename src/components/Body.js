@@ -1,9 +1,9 @@
 import React from 'react'
 import AboutMe from './body_components/AboutMe'
 import TechStack from './body_components/TechStack'
-import Activities from './body_components/Activities'
 import Projects from './body_components/Projects'
 import Organizations from './body_components/Organizations'
+import Events from './body_components/Events'
 
 const Body = () => {
     return (
@@ -12,7 +12,7 @@ const Body = () => {
             <AboutMe />
             <TechStack />
             <Projects />
-            <Activities />
+            <Events />
             <Organizations />
             {/* <Certificates /> */}
         </main>

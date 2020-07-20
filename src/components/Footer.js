@@ -5,7 +5,7 @@ function Footer() {
     return (
 
         <footer>
-            <p>Designed by - Jose Jaime Bisuna</p>
+            <p>Designed and Developed by - Jose Jaime Bisuna</p>
         </footer>
     )
 }

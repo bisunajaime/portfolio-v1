@@ -1213,7 +1213,7 @@ nav i {
 
 @media screen and (min-width: 1024px) {
   .project_body .list_projects {
-    max-width: 80%;
+    max-width: 70%;
   }
 }
 
@@ -1243,8 +1243,8 @@ nav i {
 
 @media screen and (min-width: 1024px) {
   .project_body .list_projects .project_object .project_image {
-    height: 300px;
-    width: 300px;
+    height: 200px;
+    width: 200px;
   }
   .project_body .list_projects .project_object .project_image:hover {
     -webkit-transition: 0.25s;
@@ -1311,7 +1311,7 @@ nav i {
 
 @media screen and (min-width: 1024px) {
   .project_body .list_projects .project_object .project_label {
-    font-size: 1em;
+    font-size: .8em;
   }
 }
 
@@ -1333,15 +1333,18 @@ nav i {
   left: 1em;
 }
 
-.activities {
+.events {
   height: auto;
   background: #111111;
-  padding: 1em 0;
 }
 
-.activities .activities_list {
-  max-width: 100%;
-  margin: auto;
+.events .event {
+  height: 100%;
+  padding: 1em;
+}
+
+.events .event .hosted_body {
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1351,67 +1354,23 @@ nav i {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-bottom: 2em;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: auto;
 }
 
 @media screen and (min-width: 1024px) {
-  .activities .activities_list {
+  .events .event .hosted_body {
     max-width: 90%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: auto;
   }
 }
 
-@media screen and (min-width: 1600px) {
-  .activities .activities_list {
-    max-width: 80%;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  .activities .activities_list {
-    max-width: 95%;
-  }
-}
-
-.activities .activities_list .activity {
-  background: #292929;
-  margin: 0.5em;
-  height: auto;
-  width: 150px;
-  padding: 0em;
-  -webkit-transition: 0.25s ease;
-  transition: 0.25s ease;
-  -webkit-box-shadow: 0px 0px 0px 0px #b3b3b3;
-  box-shadow: 0px 0px 0px 0px #b3b3b3;
-}
-
-@media screen and (min-width: 1024px) {
-  .activities .activities_list .activity {
-    width: 400px;
-  }
-  .activities .activities_list .activity:hover {
-    -webkit-box-shadow: 5px 5px 0px 0px #9b9dff;
-    box-shadow: 5px 5px 0px 0px #9b9dff;
-    -webkit-transform: translate(-1%, -1%);
-            transform: translate(-1%, -1%);
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  .activities .activities_list .activity {
-    width: 300px;
-  }
-  .activities .activities_list .activity:hover {
-    -webkit-transform: translate(-1%, -1%);
-            transform: translate(-1%, -1%);
-    -webkit-box-shadow: 5px 5px 0px 0px #9b9dff;
-    box-shadow: 5px 5px 0px 0px #9b9dff;
-  }
-}
-
-.activities .activities_list .activity a {
+.events .event .hosted_body a {
   text-decoration: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1422,109 +1381,107 @@ nav i {
           flex-direction: column;
 }
 
+.events .event .hosted_body a.event_item {
+  margin: 1em;
+  height: auto;
+  width: 300px;
+  -webkit-box-shadow: 0px 0px 0px 0px white;
+  box-shadow: 0px 0px 0px 0px white;
+  -webkit-transition: -webkit-transform 0.25s ease, -webkit-box-shadow .2s ease;
+  transition: -webkit-transform 0.25s ease, -webkit-box-shadow .2s ease;
+  transition: transform 0.25s ease, box-shadow .2s ease;
+  transition: transform 0.25s ease, box-shadow .2s ease, -webkit-transform 0.25s ease, -webkit-box-shadow .2s ease;
+}
+
 @media screen and (min-width: 1024px) {
-  .activities .activities_list .activity a {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+  .events .event .hosted_body a.event_item {
+    width: 350px;
   }
-}
-
-.activities .activities_list .activity a img {
-  background-size: cover;
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: 100%;
-  height: 100px;
-}
-
-@media screen and (min-width: 1024px) {
-  .activities .activities_list .activity a img {
-    height: 300px;
+  .events .event .hosted_body a.event_item:hover {
+    -webkit-box-shadow: 5px 5px 0px 0px white;
+    box-shadow: 5px 5px 0px 0px white;
+    -webkit-transform: translate(-1%, -1%);
+            transform: translate(-1%, -1%);
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-  .activities .activities_list .activity a img {
+  .events .event .hosted_body a.event_item {
+    width: 350px;
+    margin: 0.5em;
+  }
+}
+
+.events .event .hosted_body a img {
+  height: 150px;
+  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: auto;
+}
+
+@media screen and (min-width: 1024px) {
+  .events .event .hosted_body a img {
+    height: 150px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .events .event .hosted_body a img {
     height: 200px;
   }
 }
 
-.activities .activities_list .activity a .description {
-  padding: 0.5em;
+.events .event .hosted_body a .event_label {
+  padding: .5em;
 }
 
 @media screen and (min-width: 1024px) {
-  .activities .activities_list .activity a .description {
+  .events .event .hosted_body a .event_label {
     padding: 1em;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-  .activities .activities_list .activity a .description {
-    padding: 1.5em 1em;
+  .events .event .hosted_body a .event_label {
+    padding: .8em;
   }
 }
 
-.activities .activities_list .activity a .description h1 {
-  font-size: 0.6em;
+.events .event .hosted_body a .event_label h2 {
   color: white;
-  padding: 0.5em 0;
+  font-size: .8em;
+  padding: .5em 0;
+  color: #94d4ff;
 }
 
 @media screen and (min-width: 1024px) {
-  .activities .activities_list .activity a .description h1 {
+  .events .event .hosted_body a .event_label h2 {
     font-size: 1.2em;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-  .activities .activities_list .activity a .description h1 {
-    padding: 0.2em 0;
+  .events .event .hosted_body a .event_label h2 {
     font-size: 1em;
   }
 }
 
-.activities .activities_list .activity a .description p {
-  line-height: 1.6;
+.events .event .hosted_body a .event_label p {
   color: white;
-  font-size: 0.5em;
-  text-align: left;
+  font-size: 10px;
+  line-height: 1.6;
 }
 
 @media screen and (min-width: 1024px) {
-  .activities .activities_list .activity a .description p {
-    font-size: 0.75em;
+  .events .event .hosted_body a .event_label p {
+    font-size: .8em;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-  .activities .activities_list .activity a .description p {
-    font-size: 0.65em;
-  }
-}
-
-.activities .activities_list .activity a .description a {
-  font-size: 0.4em;
-  color: #cbffa9;
-  text-decoration: none;
-  outline: none;
-  font-weight: bold;
-  border: 1px solid #cbffa9;
-  margin-top: 1em;
-  padding: 0.1em 0.7em;
-}
-
-@media screen and (min-width: 1024px) {
-  .activities .activities_list .activity a .description a {
-    font-size: 0.75em;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  .activities .activities_list .activity a .description a {
-    font-size: 0.65em;
+  .events .event .hosted_body a .event_label p {
+    font-size: .7em;
   }
 }
 
@@ -1535,6 +1492,16 @@ nav i {
 
 .organizations .organizations_list {
   padding: 5em 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  max-width: 80%;
+  margin: auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .organizations .organizations_list .organization {
@@ -1682,5 +1649,9 @@ footer p {
 .carousel-cell-image.flickity-lazyloaded,
 .carousel-cell-image.flickity-lazyerror {
   opacity: 1;
+}
+
+a {
+  border: none;
 }
 /*# sourceMappingURL=style.css.map */

@@ -26,14 +26,14 @@ class Header extends Component {
 
     render() {
         return (
-            <nav >
+            <nav>
                 <img src={logo} alt="my_logo" />
                 <i onClick={this.clickFunc} id="menu_bars" ><FontAwesomeIcon icon={this.state.isOpen ? faTimes : faBars} color="white" /></i>
                 <div className="menu_items">
                     <a href="#home">Home</a>
                     <a href="#techstack">TechStack</a>
                     <a href="#projects">Projects</a>
-                    <a href="#activities">Activities</a>
+                    <a href="#seminars">Seminars</a>
                     <a href="#organizations">Organizations</a>
                     {/* <a href="#certificates">Certificates</a>
                     <a href='#contact' className='contact'>Contact</a> */}

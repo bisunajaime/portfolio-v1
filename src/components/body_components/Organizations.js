@@ -3,9 +3,9 @@ import React from 'react'
 
 function Organizations() {
     return (
-        <section id='organizations' className='organizations'>
+        <section className='organizations' id='organizations' >
             <div className='header'>
-                <h1>Organizations</h1>
+                <h1><span role="img" aria-label="organizations">🏫</span> Organizations</h1>
                 <p>Organizations I have joined</p>
             </div>
             <OrganizationsList />
@@ -19,6 +19,7 @@ function OrganizationsList() {
 
         <div className='organizations_list'>
             <Organization img={require('../../assets/images/dsc.png')} />
+            <Organization img={require('../../assets/images/aim.png')} />
         </div>
     )
 }

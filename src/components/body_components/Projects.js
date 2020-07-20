@@ -11,7 +11,7 @@ function Projects() {
         <section className="project_body" id='projects'>
             <Fade cascade bottom>
                 <div className='header'>
-                    <h1>Projects</h1>
+                    <h1><span role="img" aria-label="projects">🚧</span> Projects</h1>
                 </div>
             </Fade>
             <ProjectsList />
@@ -27,9 +27,7 @@ function ProjectsList() {
             <ProjectItem name="Covid19-Tracker" src={require("../../assets/images/covidtracker.png")} id="covidtracker" />
             <ProjectItem name="TMDB" src={require("../../assets/images/tmdb.png")} id="tmdb" />
             <ProjectItem name="Furniture Shop UI" src={require("../../assets/images/furnituredesign.png")} id="furnituredesign" />
-            <ProjectItem name="Travel App Design" src={require("../../assets/images/traveldesign.png")} id="traveldesign" />
-            {/* <ProjectItem name="Travel Design" src={require("../../assets/images/uichallenge.png")} id="traveldesign" />
-            <ProjectItem name="Furniture Design" src={require("../../assets/images/furnituredesign.png")} id="furnituredesign" /> */}
+            <ProjectItem name="Travel App UI" src={require("../../assets/images/traveldesign.png")} id="traveldesign" />
         </div>
     )
 }

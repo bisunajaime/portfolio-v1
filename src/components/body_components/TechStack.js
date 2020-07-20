@@ -13,7 +13,7 @@ export default function TechStack() {
         <section className="techstack" id="techstack">
             <Fade cascade bottom>
                 <div className="header">
-                    <h1>Tech Stack</h1>
+                    <h1><span role="img" aria-label="techstack">💻</span> Tech Stack</h1>
                     <p>Some things I know that I can use to create projects.</p>\
                 </div>
             </Fade>

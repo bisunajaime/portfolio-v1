@@ -9,7 +9,7 @@ function AboutMe() {
         <section className="about_me" id="home">
             <div className="main_info">
                 <div className="my_info">
-                    <h1>Hello, I'm <br />Jaime Bisuña</h1>
+                    <h1><span role="img" aria-label="wave">👋</span> Hello, I'm <br />Jaime Bisuña</h1>
                     <div className="divider">
                         <hr />
                         <img src={logo} alt="logo_here" />
@@ -19,8 +19,8 @@ function AboutMe() {
                     <br />
                         <br />
                     I have been part of school organizations such as <span id="aim">Association of Information
-                        Management </span>
-                    and <span id="dsc">Developer Student Clubs Philippines</span></p>
+                        Management (Operations Department) </span>
+                    and <span id="dsc">Developer Student Clubs Philippines (Research and Development Department)</span></p>
 
                     <div className="socials" target='_blank' rel="noopener">
                         <a href="https://github.com/jose-bamboo" className="circle" target="_blank" rel="noopener noreferrer">
