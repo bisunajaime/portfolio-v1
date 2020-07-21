@@ -14,7 +14,7 @@ import {
 } from "react-router-dom";
 import Navigation from './components/Navigation'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons'
+import { faBars } from '@fortawesome/free-solid-svg-icons'
 
 function App() {
   return (
@@ -36,7 +36,6 @@ function Home() {
   return (
     <React.Fragment>
       <NavToggler />
-      <Navigation />
       <Body />
       <Footer />
     </React.Fragment>
@@ -50,12 +49,15 @@ function NavToggler() {
   function toggleNav() {
     console.log('tapped')
     let nav = document.getElementById('navigation')
+    let main = document.getElementById('main')
     nav.classList.toggle("closed")
+    main.classList.toggle("closed")
     setisclosed(!isclosed)
   }
 
   return (
-    <FontAwesomeIcon icon={faBars} onClick={toggleNav} className="burger" />
+    <nav><FontAwesomeIcon icon={faBars} onClick={toggleNav} className="burger" />
+      <Navigation /></nav>
   )
 }
 

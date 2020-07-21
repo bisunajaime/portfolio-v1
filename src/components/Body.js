@@ -7,19 +7,14 @@ import Events from './body_components/Events'
 
 const Body = () => {
 
-    function onScroll() {
-        console.log(window.scrollX)
-    }
-
     return (
-        <main onScroll={onScroll}>
+        <main id="main" >
 
             <AboutMe />
             <TechStack />
             <Projects />
             <Events />
             <Organizations />
-            {/* <Certificates /> */}
         </main>
     )
 }

@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import logo from '../assets/images/logo.svg'
 
 
@@ -6,6 +6,8 @@ function Navigation() {
 
     function toggleNav() {
         let nav = document.getElementById('navigation')
+        let main = document.getElementById('main')
+        main.classList.toggle("closed")
         nav.classList.toggle("closed")
     }
 
