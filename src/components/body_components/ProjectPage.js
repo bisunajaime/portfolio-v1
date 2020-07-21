@@ -79,7 +79,7 @@ function ProjectPage() {
                     {description}
                     {renderButton(id)}
                     <div className="links">
-                        <a href={urls['github']} className="circle">
+                        <a href={urls['github']} className="circle" target='_blank' rel="noopener noreferrer" >
                             <FontAwesomeIcon icon={faGithub} size="1x" color="white" />
                         </a>
                     </div>

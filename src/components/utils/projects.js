@@ -16,7 +16,7 @@ const projects = {
                 className="firebase">Firebase</span> for the back-end.<br /><br />
                 Submitted to <span>Developer Student Clubs Philippines Solution Challenge</span>.</p>,
         'urls': {
-            'github': 'link to git'
+            'github': 'https://github.com/deeemdeeem/BayanihanPh'
         },
         'images': [
             'first.png',
@@ -37,7 +37,7 @@ const projects = {
                 <br /><br />
         The app is built using <span class="flutter">Flutter</span> for the front-end and <span class="firebase">Firebase</span> for the back-end.</p>,
         'urls': {
-            'github': 'link to git'
+            'github': 'Private'
         },
         'images': [
             'first.png',
@@ -54,7 +54,7 @@ const projects = {
         The app was built with <span class="flutter">Flutter</span>, <span class="nodejs">NodeJS</span>, <span
                 class="expressjs">ExpressJS</span>, and <span class="heroku">Heroku</span> for hosting.</p>,
         'urls': {
-            'github': 'link'
+            'github': 'https://github.com/jose-bamboo/ncovtracker-provider'
         },
         'images': [
             'first.png',
@@ -70,7 +70,7 @@ const projects = {
                 <br /><br />
         The app was built with <span class="flutter">Flutter</span>, using <span class="flutter">BLOC</span> for state management.</p>,
         'urls': {
-            'github': 'link'
+            'github': 'https://github.com/jose-bamboo/tmdb_flutter'
         },
         'images': [
             'first.png',
@@ -91,7 +91,7 @@ const projects = {
         'title': 'Travel App UI',
         'description': <p>Travel App UI made with <span className="flutter">Flutter</span> trying out different kinds of animations the framework offers.</p>,
         'urls': {
-            'github': 'link'
+            'github': 'https://github.com/jose-bamboo/travel-ui'
         },
         'images': [
             'first.png',
@@ -102,7 +102,7 @@ const projects = {
         'title': 'Furniture Shop UI',
         'description': <p>Furniture Shop UI made with <span className='flutter'>Flutter</span> trying out the speed and performance of animations.</p>,
         'urls': {
-            'github': 'link'
+            'github': 'https://github.com/jose-bamboo/furniture-ui'
         },
         'images': [
             'first.png',
