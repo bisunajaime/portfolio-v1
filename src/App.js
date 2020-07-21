@@ -1,5 +1,4 @@
-import React from 'react';
-import Header from './components/Header';
+import React, { useState } from 'react';
 import Body from './components/Body'
 import Footer from './components/Footer'
 import ProjectPage from './components/body_components/ProjectPage'
@@ -13,6 +12,9 @@ import {
   Route,
   Redirect,
 } from "react-router-dom";
+import Navigation from './components/Navigation'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons'
 
 function App() {
   return (
@@ -33,23 +35,27 @@ function App() {
 function Home() {
   return (
     <React.Fragment>
-      <Menu />
-      <Header />
+      <NavToggler />
+      <Navigation />
       <Body />
       <Footer />
     </React.Fragment>
   )
 }
 
+function NavToggler() {
 
-function Menu() {
+  const [isclosed, setisclosed] = useState(true)
+
+  function toggleNav() {
+    console.log('tapped')
+    let nav = document.getElementById('navigation')
+    nav.classList.toggle("closed")
+    setisclosed(!isclosed)
+  }
+
   return (
-    <div className="menu_items_mobile closed" id="menu_items_mobile">
-      <a href="#home">Home</a>
-      <a href="#techstack">Techstack</a>
-      <a href="#projects">Projects</a>
-      <a href="#activities">Activities</a>
-    </div>
+    <FontAwesomeIcon icon={faBars} onClick={toggleNav} className="burger" />
   )
 }
 

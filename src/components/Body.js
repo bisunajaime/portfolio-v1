@@ -6,8 +6,13 @@ import Organizations from './body_components/Organizations'
 import Events from './body_components/Events'
 
 const Body = () => {
+
+    function onScroll() {
+        console.log(window.scrollX)
+    }
+
     return (
-        <main>
+        <main onScroll={onScroll}>
 
             <AboutMe />
             <TechStack />

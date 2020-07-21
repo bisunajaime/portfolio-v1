@@ -1260,6 +1260,94 @@ footer {
     }
 }
 
+.burger {
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    z-index: 9999;
+    font-size: 1.5em;
+    color: white;
+    cursor: pointer;
+}
+
+.navigation {
+    width: 100%;
+    height: 100vh;
+    right: 0;
+    position: fixed;
+    z-index: 999;
+    transition: transform .25s ;
+    &.closed {
+        transform: translateX(100%);
+    }
+    &.open {
+        transform: translateX(0%);
+    }
+    background: #1a1a1a;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5em;
+    justify-content: center;
+    
+    
+    @media screen and (min-width: 1024px) {
+        width: 50%;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+        
+    }
+
+    svg {
+        position: fixed;
+        right: 20px;
+        color: white;
+        font-size: 2em;
+        cursor: pointer;
+    }
+    ul {
+        list-style: none;
+        width: 100%;
+        li {
+                margin-bottom: 2em;
+            a {
+                text-decoration:  none;
+                font-size: 2em;
+                font-weight: bold;
+                color: white;
+                @media screen and (min-width: 1024px) {
+                    
+                }
+
+                @media screen and (min-width: 768px) and (max-width: 1024px) {
+                    
+                }
+            }
+        }
+    }
+
+    .card {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        img {
+            height: 50px;
+        }
+        .card_info {
+            padding-left: 10px;
+            h4 {
+                color: white;
+                font-size: .8em;
+            }
+            p {
+                color: #7a7a7a;
+                font-size: .7em;
+            }
+        }
+    }
+    
+}
+
 .hide {
     display: none;
 }
