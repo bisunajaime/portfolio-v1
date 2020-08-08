@@ -3,17 +3,14 @@ import '../../assets/css/flickity.css'
 import {
     Link
 } from "react-router-dom";
-import Fade from 'react-reveal/Fade'
 
 
 function Projects() {
     return (
         <section className="project_body" id='projects'>
-            <Fade cascade bottom>
-                <div className='header'>
-                    <h1><span role="img" aria-label="projects">🚧</span> Projects</h1>
-                </div>
-            </Fade>
+            <div className='header'>
+                <h1><span role="img" aria-label="projects">🚧</span> Mobile Projects</h1>
+            </div>
             <ProjectsList />
         </section>
     )
@@ -36,14 +33,12 @@ function ProjectItem(props) {
     let { name, src, id } = props
     return (
         <Link to={`/${id}`} className="link">
-            <Fade bottom>
-                <div className="project_object">
-                    <div className={`project_image ${id}`}>
-                        <img src={src} alt="Project_Image" />
-                    </div>
-                    <div className="project_label">{name}</div>
+            <div className="project_object">
+                <div className={`project_image ${id}`}>
+                    <img src={src} alt="Project_Image" />
                 </div>
-            </Fade>
+                <div className="project_label">{name}</div>
+            </div>
         </Link>
     )
 }

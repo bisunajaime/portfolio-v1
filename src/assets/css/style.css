@@ -1071,6 +1071,202 @@ main.closed {
   left: 1em;
 }
 
+.project_body {
+  height: auto;
+  background: var(--bg-primary-color);
+}
+
+@media screen and (min-width: 1024px) {
+  .project_body {
+    padding: 4em 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .project_body {
+    padding: 2em 0;
+  }
+}
+
+.project_body .head_project {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 3em 0;
+}
+
+.project_body .head_project h1 {
+  color: white;
+  text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+  .project_body .head_project h1 {
+    font-size: 2em;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .project_body .head_project h1 {
+    font-size: 2em;
+  }
+}
+
+.project_body .head_project a {
+  color: white;
+  margin-top: 1em;
+  font-weight: 400;
+  font-size: 0.8em;
+  text-decoration: none;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.project_body .head_project a:hover {
+  color: #afc8ff;
+}
+
+@media screen and (min-width: 1024px) {
+  .project_body .head_project a {
+    font-size: 1em;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .project_body .head_project a {
+    font-size: 0.9em;
+  }
+}
+
+.webprojects {
+  max-width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+  padding: 3em 0;
+}
+
+@media screen and (min-width: 1024px) {
+  .webprojects {
+    max-width: 70%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .webprojects {
+    max-width: 90%;
+  }
+}
+
+.webprojects .webprojects_list {
+  max-width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+  padding: 3em 0;
+  max-width: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+  .webprojects .webprojects_list {
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .webprojects .webprojects_list {
+    max-width: 100%;
+  }
+}
+
+.webprojects .webproject_item {
+  margin: 0.5em;
+}
+
+.webprojects .webproject_item .webproject_image {
+  height: 150px;
+  width: auto;
+  margin-bottom: 0.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+@media screen and (min-width: 1024px) {
+  .webprojects .webproject_item .webproject_image {
+    height: 260px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .webprojects .webproject_item .webproject_image {
+    height: 200px;
+  }
+}
+
+.webprojects .webproject_item .webproject_image img {
+  height: 100%;
+}
+
+.webprojects .webproject_item .webproject_image.weatherapp {
+  background: #7a7a7a;
+}
+
+.webprojects .webproject_item .webproject_label {
+  font-weight: 400;
+  color: white;
+  text-align: center;
+  font-size: 0.7em;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 1024px) {
+  .webprojects .webproject_item .webproject_label {
+    font-size: 0.8em;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .webprojects .webproject_item .webproject_label {
+    font-size: 1em;
+  }
+}
+
 .events {
   height: auto;
   background: var(--bg-primary-color);
@@ -1340,7 +1536,7 @@ footer p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 3em 0;
+  padding: 2em 0;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1541,5 +1737,6 @@ footer p {
 
 a {
   border: none;
+  outline: none;
 }
 /*# sourceMappingURL=style.css.map */
