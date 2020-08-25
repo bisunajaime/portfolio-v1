@@ -1,0 +1,224 @@
+{
+    "events": {
+        "hosted": [
+            {
+                "name": "Flutter Study Jam Pt. 1",
+                "cover_img": "/images/activities/flutter_sj.jpg",
+                "description": "Speaker at DSC Benilde's event on Flutter, where I taught students the basics of developing a mobile application with Flutter. From installation to building a basic application using different kinds of widgets.",
+                "url_to_event": "https://www.facebook.com/dsccsb/photos/a.158427545551051/195971265130012"
+            },
+            {
+                "name": "Flutter Study Jam Pt. 2",
+                "cover_img": "/images/activities/flutter_sj1.png",
+                "description": "Speaker at DSC Benilde's second event on Flutter, where I taught students how to integrate a qr code scanner to a mobile application, and how to create and read a qr code using the available flutter packages.",
+                "url_to_event": "https://www.facebook.com/dsccsb/photos/pcb.191954185531720/191953975531741/"
+            },
+            {
+                "name": "Flutter for Starters",
+                "cover_img": "/images/activities/flutter_forstarters.png",
+                "description": "Guest Speaker at Flutter for starters Webinar hosted by Developer Student Clubs Philippines. Where I shared some mobile applications I've made and insights on why Flutter is a great tool for developers.",
+                "url_to_event": "https://www.facebook.com/dsc.philippines/videos/1617848895036898"
+            }
+        ],
+        "attended": [
+            {
+                "name": "Solution Challenge",
+                "cover_img": "/images/activities/solchal.png",
+                "description": "Participated in Developer Student Clubs Solution challenge, where it was required for us to develop a application that solves local problems. (Bayanihan PH)",
+                "url_to_event": "https://github.com/jose-bamboo/solution-challenge"
+            },
+            {
+                "name": "Samsung Workshop",
+                "cover_img": "/images/placeholders/placeholder_box.png",
+                "description": "Attended Samsung Workshop hosted by Association of Information Management (AIM) where we were taught by Samsung Developers how to create and design applications for Galaxy Watch using Tizen Studio.",
+                "url_to_event": ""
+            }
+        ]
+    },
+    "techstacks": {
+        "frontend": {
+            "cover_img": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-1.2.1&auto=format&fit=crop&w=2100&q=80",
+            "stacks": [
+                "HTML",
+                "CSS",
+                "JS",
+                "SASS",
+                "React",
+                "Flutter",
+                "Bootstrap"
+            ]
+        },
+        "backend": {
+            "cover_img": "https://images.unsplash.com/photo-1555099962-4199c345e5dd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80",
+            "stacks": [
+                "Firebase",
+                "PHP",
+                "Java",
+                "Node",
+                "Express",
+                "MySQL",
+                "MSSQL"
+            ]
+        },
+        "tools": {
+            "cover_img": "https://wallpapercave.com/wp/wp3929762.jpg",
+            "stacks": [
+                "Github",
+                "Heroku",
+                "Netlify",
+                "Wordpress",
+                "Android",
+                "RESTful API"
+            ]
+        }
+    },
+    "projects": [
+        {
+            "name": "WhatsCook'n",
+            "description": "WhatsCook’n is one of the projects I made during the covid quarantine. It serves as a platform for small and local businesses, found in BF Homes Paranaque, to advertise their food products. The app makes it easier for people to look for the food they feel like having, also brings publicity to the small business, making them well known for their products.",
+            "short_description": "Mobile app for online food sellers in BF Homes, Paranaque",
+            "stack": [
+                "Flutter",
+                "Firebase"
+            ],
+            "cover_img": "/images/whatscookn/whatscookn_cover.png",
+            "sample_ui": [
+                "/images/whatscookn/first.png",
+                "/images/whatscookn/second.png",
+                "/images/whatscookn/third.png",
+                "/images/whatscookn/fourth.png"
+            ],
+            "demo_video": "",
+            "git_url": "",
+            "demo_app": ""
+        },
+        {
+            "name": "BayanihanPH",
+            "description": "BayanihanPH is a mobile application for people who are looking to help others during calamity. It allows relief centers to input information such as availability, supplies needed, contact info, and accepted goods. Regular users of the application will be able to see nearby centers to offer their help to. The app makes it easy for them to locate the relief center, with the Open in Maps feature, which launches the users maps application such as Google Maps or Waze, and shows them how to get there.",
+            "short_description": "App for people who are looking to help others.",
+            "stack": [
+                "Flutter",
+                "Firebase"
+            ],
+            "cover_img": "/images/bayanihanph/bayanihanph_cover.png",
+            "sample_ui": [
+                "/images/bayanihanph/first.png",
+                "/images/bayanihanph/second.png",
+                "/images/bayanihanph/third.png",
+                "/images/bayanihanph/fourth.png",
+                "/images/bayanihanph/fifth.png"
+            ],
+            "demo_video": "",
+            "git_url": "",
+            "demo_app": ""
+        },
+        {
+            "name": "Covid19-Tracker",
+            "description": "Covid19 Tracker is a mobile application built during the covid 19 quarantine to stay updated with the current number of cases and status of each country.",
+            "short_description": "Real-time updates on COVID cases.",
+            "stack": [
+                "Flutter",
+                "ExpressJS",
+                "NodeJS",
+                "Heroku",
+                "NewsAPI",
+                "Web Scraping"
+            ],
+            "cover_img": "/images/covidtracker/covidtracker_cover.png",
+            "sample_ui": [
+                "/images/covidtracker/first.png",
+                "/images/covidtracker/second.png",
+                "/images/covidtracker/third.png",
+                "/images/covidtracker/fourth.png",
+                "/images/covidtracker/fifth.png"
+            ],
+            "demo_video": "",
+            "git_url": "",
+            "demo_app": ""
+        },
+        {
+            "name": "Cinemalist",
+            "description": "TMDB is a mobile application built using the TMDB API, provided the trending information of movie, tv shows, and actors.",
+            "short_description": "Latest movies and tv shows in one app.",
+            "stack": [
+                "Flutter",
+                "TMDB API",
+                "BLoC"
+            ],
+            "cover_img": "/images/cinemalist/cinemalist_cover.png",
+            "sample_ui": [
+                "/images/cinemalist/first.png",
+                "/images/cinemalist/second.png",
+                "/images/cinemalist/third.png",
+                "/images/cinemalist/fourth.png",
+                "/images/cinemalist/fifth.png",
+                "/images/cinemalist/sixth.png",
+                "/images/cinemalist/seventh.png",
+                "/images/cinemalist/eight.png",
+                "/images/cinemalist/ninth.png",
+                "/images/cinemalist/tenth.png",
+                "/images/cinemalist/eleven.png",
+                "/images/cinemalist/twelve.png"
+            ],
+            "demo_video": "",
+            "git_url": "",
+            "demo_app": ""
+        },
+        {
+            "name": "Weather App",
+            "description": "Weather web app made with raw HTML, CSS, and Vanilla JS",
+            "short_description": "Weather web app using HTML, CSS, and JS",
+            "stack": [
+                "Fetch API",
+                "HTML",
+                "CSS",
+                "JS"
+            ],
+            "cover_img": "/images/weatherapp/weatherapp_cover.png",
+            "sample_ui": [
+                "/images/weatherapp/weatherapp.png"
+            ],
+            "demo_video": "",
+            "git_url": "",
+            "demo_app": ""
+        },
+        {
+            "name": "SIS Grades Scraper",
+            "description": "Web scraper that screenshots my grades from SIS.",
+            "short_description": "Grades web scraper",
+            "stack": [
+                "Python",
+                "Selenium"
+            ],
+            "cover_img": "https://images.unsplash.com/photo-1550645612-83f5d594b671?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80",
+            "sample_ui": [],
+            "demo_video": "",
+            "git_url": "",
+            "demo_app": ""
+        }
+    ],
+    "organizations": [
+        {
+            "name": "Developer Students Club CSB",
+            "acronym": "DSC",
+            "cover_img": "/images/orgs/dsc.png",
+            "department": "Research and Development Department",
+            "year": "2019-2020"
+        },
+        {
+            "name": "Association of Information Management",
+            "acronym": "AIM",
+            "cover_img": "/images/orgs/aim.png",
+            "department": "Operations Department",
+            "year": "2018-2019"
+        }
+    ],
+    "icons": {
+        "next": "/images/icons/arrow_next.svg",
+        "prev": "/images/icons/arrow_prev.svg",
+        "close": "/images/icons/close_proj.svg"
+    },
+    "placeholders": {
+        "box": "/images/placeholders/placeholder_box.png"
+    }
+}
