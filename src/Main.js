@@ -28,6 +28,9 @@ const MyInfo = () => {
             <p>
                 I am a Software Developer who has a passion for developing mobile/web applications and believes that time is something that must not be wasted, but must be used wisely.
             </p>
+            <a href="#" className="cv">
+                Download CV
+            </a>
             {/* <div className="socials row-flex" >
                 <a href="" >I</a>
                 <a href="" >I</a>
@@ -108,22 +111,28 @@ const Projects = () => {
                     reloadOnUpdate={true}
                     key={currentProjectInfo.name}
                 >
-                    {currentProject.sample_ui.map((e, i) => <img key={`${currentProjectInfo.name}_${i}`} alt={currentProjectInfo.name} src={e} />)}
+                    {currentProject.sample_ui.map((e, i) => <img key={`${currentProjectInfo.name}_${i}`} alt={currentProjectInfo.name} data-flickity-lazyload={e} className="carousel-cell-image" />)}
                 </Flickity>
                 <div className="project__info column-flex">
                     {/* project info grid */}
                     {/* <img src={currentProject.cover_img} /> */}
                     <div className="info">
                         <h3>{currentProject.name}</h3>
-                        <p>{currentProject.description}</p>
                         <ul className="row-flex">
                             {currentProject.stack.map(e => <li>{e}</li>)}
                         </ul>
+                        <p>{currentProject.description}</p>
+                        <div className="row-flex btn-group" >
+                            <a href="#">Code</a>
+                            <a href="#">Demo</a>
+                        </div>
                     </div>
                     <div className="row-flex buttons">
-                        <img src={data.icons.prev} onClick={(e) => prevProject(e, projectIndex)} alt="prev_btn" />
+                        <div className="row-flex control">
+                            <img src={data.icons.prev} onClick={(e) => prevProject(e, projectIndex)} alt="prev_btn" />
+                            <img src={data.icons.next} onClick={(e) => nextProject(e, projectIndex)} alt="next_btn" />
+                        </div>
                         <img src={data.icons.close} onClick={() => hideProject()} alt="close_btn" />
-                        <img src={data.icons.next} onClick={(e) => nextProject(e, projectIndex)} alt="next_btn" />
                     </div>
                 </div>
             </div>
@@ -142,7 +151,6 @@ const Projects = () => {
                         <h3>{e.name}</h3>
                         <div className="links row-flex">
                             <a href="https://github.com/jose-bamboo"  >Code</a>
-                            <a href="https://github.com/jose-bamboo"  >Demo</a>
                             <a href="#personal__projects" id={e.name} onClick={() => showProject(i)} >More</a>
                         </div>
                         <p>{e.short_description}</p>

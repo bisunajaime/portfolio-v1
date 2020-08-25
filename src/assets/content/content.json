@@ -32,6 +32,12 @@
                 "cover_img": "/images/placeholders/placeholder_box.png",
                 "description": "Attended Samsung Workshop hosted by Association of Information Management (AIM) where we were taught by Samsung Developers how to create and design applications for Galaxy Watch using Tizen Studio.",
                 "url_to_event": ""
+            },
+            {
+                "name": "#FlutterPH UI Challenge",
+                "cover_img": "/images/placeholders/placeholder_box_2.png",
+                "description": "Participated in FlutterPH UI Challenge, individual submission of an Online Shop UI since the pandemic made us all move to online business.",
+                "url_to_event": ""
             }
         ]
     },
@@ -81,7 +87,7 @@
                 "Flutter",
                 "Firebase"
             ],
-            "cover_img": "/images/whatscookn/whatscookn_cover.png",
+            "cover_img": "/images/whatscookn/whatscookn_cover.svg",
             "sample_ui": [
                 "/images/whatscookn/first.png",
                 "/images/whatscookn/second.png",
@@ -100,7 +106,7 @@
                 "Flutter",
                 "Firebase"
             ],
-            "cover_img": "/images/bayanihanph/bayanihanph_cover.png",
+            "cover_img": "/images/bayanihanph/bayanihanph_cover.svg",
             "sample_ui": [
                 "/images/bayanihanph/first.png",
                 "/images/bayanihanph/second.png",
@@ -124,7 +130,7 @@
                 "NewsAPI",
                 "Web Scraping"
             ],
-            "cover_img": "/images/covidtracker/covidtracker_cover.png",
+            "cover_img": "/images/covidtracker/covidtracker_cover.svg",
             "sample_ui": [
                 "/images/covidtracker/first.png",
                 "/images/covidtracker/second.png",
@@ -133,7 +139,7 @@
                 "/images/covidtracker/fifth.png"
             ],
             "demo_video": "",
-            "git_url": "",
+            "git_url": "https://github.com/jose-bamboo/ncovtracker-provider",
             "demo_app": ""
         },
         {
@@ -145,7 +151,7 @@
                 "TMDB API",
                 "BLoC"
             ],
-            "cover_img": "/images/cinemalist/cinemalist_cover.png",
+            "cover_img": "/images/cinemalist/cinemalist_cover.svg",
             "sample_ui": [
                 "/images/cinemalist/first.png",
                 "/images/cinemalist/second.png",
@@ -174,7 +180,7 @@
                 "CSS",
                 "JS"
             ],
-            "cover_img": "/images/weatherapp/weatherapp_cover.png",
+            "cover_img": "/images/weatherapp/weatherapp_cover.svg",
             "sample_ui": [
                 "/images/weatherapp/weatherapp.png"
             ],
@@ -199,18 +205,18 @@
     ],
     "organizations": [
         {
-            "name": "Developer Students Club CSB",
-            "acronym": "DSC",
-            "cover_img": "/images/orgs/dsc.png",
-            "department": "Research and Development Department",
-            "year": "2019-2020"
-        },
-        {
             "name": "Association of Information Management",
             "acronym": "AIM",
             "cover_img": "/images/orgs/aim.png",
             "department": "Operations Department",
             "year": "2018-2019"
+        },
+        {
+            "name": "Developer Students Club CSB",
+            "acronym": "DSC",
+            "cover_img": "/images/orgs/dsc.png",
+            "department": "Research and Development Department",
+            "year": "2019-2020"
         }
     ],
     "icons": {
@@ -219,6 +225,7 @@
         "close": "/images/icons/close_proj.svg"
     },
     "placeholders": {
-        "box": "/images/placeholders/placeholder_box.png"
+        "box": "/images/placeholders/placeholder_box.png",
+        "box2": "/images/placeholders/placeholder_box_2.png"
     }
 }

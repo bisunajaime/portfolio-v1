@@ -154,14 +154,15 @@ main {
 
 #my__info {
   line-height: 1.6;
-  height: 90vh;
+  height: 85vh;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: url("https://images.unsplash.com/photo-1447075431787-68801189fbe2?ixlib=rb-1.2.1&auto=format&fit=crop&w=2100&q=80");
+  background: rgba(0, 0, 0, 0.65) url("https://images.unsplash.com/photo-1510519138101-570d1dca3d66?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2062&q=80");
+  background-blend-mode: darken;
   background-position: center;
   background-size: cover;
   -o-object-fit: cover;
@@ -212,6 +213,28 @@ main {
     width: 70%;
     font-size: 0.8em;
   }
+}
+
+#my__info a {
+  text-decoration: none;
+  font-size: 0.8em;
+  margin-top: 10px;
+}
+
+#my__info a.cv {
+  padding: 10px 15px;
+  background-color: transparent;
+  color: var(--theme-yellow);
+  border: 1px solid var(--theme-yellow);
+  font-weight: 300;
+  -webkit-transition: color 0.25s, background 0.25s, font-weight 0.25s;
+  transition: color 0.25s, background 0.25s, font-weight 0.25s;
+}
+
+#my__info a.cv:hover {
+  color: black;
+  font-weight: bold;
+  background: var(--theme-yellow);
 }
 
 #personal__projects .projects {
@@ -508,7 +531,7 @@ main {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
-  padding: 1em;
+  padding: 2em;
   background: #181c3b;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -551,6 +574,28 @@ main {
   #project__info .project__info .info p {
     font-size: 0.8em;
   }
+}
+
+#project__info .project__info .info .btn-group {
+  margin: 10px 0;
+}
+
+#project__info .project__info .info .btn-group a {
+  margin: 0 5px 0 0;
+  text-decoration: none;
+  padding: 5px 10px;
+  color: var(--theme-yellow);
+  background: transparent;
+  border: 1px solid var(--theme-yellow);
+  border-radius: 5px;
+  font-size: 0.8em;
+  -webkit-transition: color 0.25s, border 0.25s;
+  transition: color 0.25s, border 0.25s;
+}
+
+#project__info .project__info .info .btn-group a:hover {
+  border: 1px solid #9ee0ff;
+  color: #9ee0ff;
 }
 
 #project__info .project__info .info ul {
@@ -597,6 +642,10 @@ main {
   #project__info .project__info .buttons img {
     height: 25px;
   }
+}
+
+#project__info .project__info .buttons .control img {
+  margin: 0 5px;
 }
 
 #joined__organizations {
@@ -706,5 +755,16 @@ footer {
 
 .is-fullscreen {
   bottom: 0;
+}
+
+.carousel-cell-image {
+  -webkit-transition: opacity 0.4s;
+  transition: opacity 0.4s;
+  opacity: 0;
+}
+
+.carousel-cell-image.flickity-lazyloaded,
+.carousel-cell-image.flickity-lazyerror {
+  opacity: 1;
 }
 /*# sourceMappingURL=style.css.map */
