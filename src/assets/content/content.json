@@ -35,7 +35,7 @@
             },
             {
                 "name": "#FlutterPH UI Challenge",
-                "cover_img": "/images/placeholders/placeholder_box_2.png",
+                "cover_img": "/images/activities/uichal.png",
                 "description": "Participated in FlutterPH UI Challenge, individual submission of an Online Shop UI since the pandemic made us all move to online business.",
                 "url_to_event": ""
             }
@@ -198,6 +198,27 @@
             ],
             "cover_img": "https://images.unsplash.com/photo-1550645612-83f5d594b671?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80",
             "sample_ui": [],
+            "demo_video": "",
+            "git_url": "",
+            "demo_app": ""
+        },
+        {
+            "name": "FlutterPH #UIChallenge: Food Delivery UI",
+            "description": "Joined FlutterPH UI Challenge event, where individuals had to develop an online store UI using Flutter.",
+            "short_description": "FlutterPH Group UI Challenge: Build an online store UI using Flutter.",
+            "stack": [
+                "Flutter"
+            ],
+            "cover_img": "/images/uichal_flph/cover_img.png",
+            "sample_ui": [
+                "/images/uichal_flph/first.png",
+                "/images/uichal_flph/second.png",
+                "/images/uichal_flph/third.png",
+                "/images/uichal_flph/fourth.png",
+                "/images/uichal_flph/fifth.png",
+                "/images/uichal_flph/sixth.png",
+                "/images/uichal_flph/seventh.png"
+            ],
             "demo_video": "",
             "git_url": "",
             "demo_app": ""

@@ -375,6 +375,13 @@ main {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(2, 1fr);
     }
+
+    .web__demo {
+        height: auto;
+        width: 100%;
+        grid-column: 1/2;
+        margin: auto;
+    }
     .project__demo {
         height: auto;
         width: 100%;
@@ -464,6 +471,7 @@ main {
         .buttons {
             justify-content: space-between;
             img {
+                align-self: flex-end;
                 height: 50px;
                 cursor: pointer;
                 @media (max-width: 600px) {
@@ -565,7 +573,7 @@ footer {
 }
 
 .carousel-cell-image {
-    transition: opacity 0.4s;
+    transition: opacity 0.2s;
     opacity: 0;
 }
 

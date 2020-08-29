@@ -485,6 +485,15 @@ main {
   }
 }
 
+#project__info .web__demo {
+  height: auto;
+  width: 100%;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  margin: auto;
+}
+
 #project__info .project__demo {
   height: auto;
   width: 100%;
@@ -628,6 +637,8 @@ main {
 }
 
 #project__info .project__info .buttons img {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
   height: 50px;
   cursor: pointer;
 }
@@ -758,8 +769,8 @@ footer {
 }
 
 .carousel-cell-image {
-  -webkit-transition: opacity 0.4s;
-  transition: opacity 0.4s;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
   opacity: 0;
 }
 

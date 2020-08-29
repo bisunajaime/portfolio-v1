@@ -53,17 +53,6 @@ const Projects = () => {
     const [projectShow, setProjectShow] = useState(false)
     const [currentProject, setCurrentProject] = useState(null)
     const [projectIndex, setProjectIndex] = useState(null)
-    const sliderOptions = {
-        pageDots: false,
-        cellAlign: 'center',
-        contain: true,
-        wrapAround: true,
-        fullscreen: true,
-        prevNextButtons: true,
-        setGallerySize: false,
-        imagesLoaded: true,
-        lazyLoad: true
-    }
     useEffect(() => {
         if (projectIndex != null) {
             setCurrentProject(data.projects[projectIndex])
@@ -104,18 +93,8 @@ const Projects = () => {
     const currentProjectInfo = () => {
         return (
             <div id="project__info">
-                <Flickity
-                    className="project__demo"
-                    elementType="div"
-                    options={sliderOptions}
-                    reloadOnUpdate={true}
-                    key={currentProjectInfo.name}
-                >
-                    {currentProject.sample_ui.map((e, i) => <img key={`${currentProjectInfo.name}_${i}`} alt={currentProjectInfo.name} data-flickity-lazyload={e} className="carousel-cell-image" />)}
-                </Flickity>
+                <ProjectCarousel currentProjectInfo={currentProject} />
                 <div className="project__info column-flex">
-                    {/* project info grid */}
-                    {/* <img src={currentProject.cover_img} /> */}
                     <div className="info">
                         <h3>{currentProject.name}</h3>
                         <ul className="row-flex">
@@ -162,6 +141,35 @@ const Projects = () => {
             </div>
         </div>
     )
+}
+
+const ProjectCarousel = props => {
+    let { currentProjectInfo } = props
+
+    const sliderOptions = {
+        pageDots: false,
+        cellAlign: 'center',
+        contain: true,
+        wrapAround: true,
+        fullscreen: true,
+        prevNextButtons: true,
+        setGallerySize: false,
+        imagesLoaded: true,
+        lazyLoad: true
+    }
+    if (currentProjectInfo.sample_ui.length == 1) {
+        return <img className="web__demo" src={currentProjectInfo.sample_ui[0]} />
+    } else {
+        return <Flickity
+            className="project__demo"
+            elementType="div"
+            options={sliderOptions}
+            reloadOnUpdate={true}
+            key={currentProjectInfo.name}
+        >
+            {currentProjectInfo.sample_ui.map((e, i) => <img key={`${currentProjectInfo.name}_${i}`} alt={currentProjectInfo.name} data-flickity-lazyload={e} className="carousel-cell-image" />)}
+        </Flickity>
+    }
 }
 
 const TechStack = () => {
