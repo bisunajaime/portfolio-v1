@@ -4,9 +4,11 @@ import Navbar from './Navbar'
 import Footer from './Footer'
 import { useEffect, useState } from 'react'
 import data from './assets/content/content.json'
+import { CircularProgressbar } from 'react-circular-progressbar';
 
 function App() {
   const [imgsLoaded, setImgsLoaded] = useState(false)
+  const [percent, setPercent] = useState(0)
 
   useEffect(() => {
     const loadImage = image => {
@@ -24,21 +26,40 @@ function App() {
       })
     }
 
-    let imageArr = []
-
-    data.projects.map(e => e.sample_ui.map(i => imageArr.push(i)))
-    console.log(imageArr)
-    Promise.all(imageArr.map(image => {
-      console.log(image)
+    Promise.all(data.images.map(async (image, index) => {
+      let length = data.images.length
+      let currentIndex = index
+      let p = ((index / length) * 100).toFixed(2)
       loadImage("https://bisunajaime-portfolio.netlify.app" + image)
     }))
-      .then(() => setImgsLoaded(true))
+      .then(() => {
+        setImgsLoaded(true)
+      })
       .catch(err => console.log("Failed to load images", err))
   }, [])
 
   if (!imgsLoaded) {
     return (
-      <h1>Loading</h1>
+      <section
+        style={{
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          justifyContent: 'center',
+          height: '100vh',
+          background: '#0f1122'
+        }}
+      >
+        {/* <CircularProgressbar
+          value={percent}
+          text={`${percent}%`}
+        /> */}
+        <h1
+          style={{
+            color: 'white'
+          }}
+        >Please wait while assets are loaded.</h1>
+      </section>
     )
   }
 
