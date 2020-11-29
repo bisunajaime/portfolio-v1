@@ -202,6 +202,7 @@
                 "/images/whatscookn/third.png",
                 "/images/whatscookn/fourth.png"
             ],
+            "learnings": "In this project, I was able to learn how to use Firebase Cloud Firestore as my Database, Firebase Cloud Storage for storing files, and connecting it with Flutter to display data in realtime using Streams.",
             "demo_video": "",
             "git_url": "",
             "demo_app": ""
@@ -214,6 +215,7 @@
                 "Flutter",
                 "Firebase"
             ],
+            "learnings": "In this project, it was my first time to use Firebase Realtime Database as my database and was able to do some CRUD operations. I also learned that there are alternatives to Google Maps (e.g. Open Street Maps) that can be used as a maps provider.",
             "cover_img": "/images/bayanihanph/bayanihanph_cover.svg",
             "sample_ui": [
                 "/images/bayanihanph/first.png",
@@ -238,6 +240,7 @@
                 "NewsAPI",
                 "Web Scraping"
             ],
+            "learnings": "In this project I was able to learn how to use NodeJS for web scraping together with ExpressJS for fetching and sorting the scraped data. I was able to use Heroku for hosting the ExpressJS REST API. I also was able to integrate a News API to see news from different categories.",
             "cover_img": "/images/covidtracker/covidtracker_cover.svg",
             "sample_ui": [
                 "/images/covidtracker/first.png",
@@ -259,6 +262,7 @@
                 "TMDB API",
                 "BLoC"
             ],
+            "learnings": "In this project I was able to learn more about state management in Flutter, aside from popular/trending state management methods (e.g. Provider). I was able to learn how to use BLoC (Business Logic Component) for state management. According to some articles I have read, this is one of the most preferred methods for managing state due to its scalability and easier code readability.",
             "cover_img": "/images/cinemalist/cinemalist_cover.svg",
             "sample_ui": [
                 "/images/cinemalist/first.png",
@@ -288,6 +292,7 @@
                 "CSS",
                 "JS"
             ],
+            "learnings": "Since most of my projects in the site are made with Flutter, I decided to create a weather web app that fetches data from an API and displays current weather information.",
             "cover_img": "/images/weatherapp/weatherapp_cover.svg",
             "sample_ui": [
                 "/images/weatherapp/weatherapp.png"
@@ -304,6 +309,7 @@
                 "Python",
                 "Selenium"
             ],
+            "learnings": "In this project, I learned how to use Python for web scraping and automation. The script logs in to my school account and takes a screenshot of my grades and then forwards it to my email so I wouldn't have to do it manually.",
             "cover_img": "https://images.unsplash.com/photo-1550645612-83f5d594b671?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80",
             "sample_ui": [],
             "demo_video": "",
@@ -317,6 +323,7 @@
             "stack": [
                 "Flutter"
             ],
+            "learnings": "In this project, I was able to improve on designing and developing user interfaces in Flutter. The design inspiration for this came from one of the UX Instagram pages I follow.",
             "cover_img": "/images/uichal_flph/cover_img.png",
             "sample_ui": [
                 "/images/uichal_flph/first.png",
@@ -339,6 +346,7 @@
                 "Flutter",
                 "Laravel"
             ],
+            "learnings": "In this project, I learned so much such as authentication, single sign on, REST API, using libraries, night mode implementation, and so much more.",
             "cover_img": "/images/needl/needl_patient_cover.png",
             "sample_ui": [
                 "/images/needl/patient/login.png",
@@ -388,6 +396,7 @@
                 "Flutter",
                 "Laravel"
             ],
+            "learnings": "In this project, I learned so much such as authentication, single sign on, REST API, using libraries, night mode implementation, and so much more.",
             "cover_img": "/images/needl/needl_medtech_cover.png",
             "sample_ui": [
                 "/images/needl/medtech/login.png",

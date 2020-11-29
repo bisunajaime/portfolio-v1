@@ -53,6 +53,7 @@ const Projects = () => {
     const [projectShow, setProjectShow] = useState(false)
     const [currentProject, setCurrentProject] = useState(null)
     const [projectIndex, setProjectIndex] = useState(null)
+    const [imgsLoaded, setImgsLoaded] = useState(false)
     useEffect(() => {
         if (projectIndex != null) {
             setCurrentProject(data.projects[projectIndex])
@@ -65,6 +66,30 @@ const Projects = () => {
         if (projectIndex > data.projects.length - 1) {
             setProjectIndex(0)
         }
+        if (currentProject == null)
+            return;
+        const loadImage = image => {
+            return new Promise((resolve, reject) => {
+                const loadImg = new Image()
+                loadImg.src = image
+                loadImage.key = image
+                // wait 2 seconds to simulate loading time
+                loadImg.onload = () =>
+                    resolve(image.url)
+                loadImg.onerror = err => reject(err)
+            })
+        }
+
+        Promise.all(currentProject.sample_ui.map((image, index) => {
+            // let length = data.images.length
+            // let currentIndex = index
+            // let p = ((index / length) * 100).toFixed(2)
+            loadImage("https://bisunajaime-portfolio.netlify.app" + image)
+        }))
+            .then(() => {
+                setImgsLoaded(true)
+            })
+            .catch(err => console.log("Failed to load images", err))
     }, [currentProject, projectIndex, projectShow])
 
     const showProject = index => {
@@ -93,7 +118,7 @@ const Projects = () => {
     const currentProjectInfo = () => {
         return (
             <div id="project__info">
-                <ProjectCarousel currentProjectInfo={currentProject} />
+                {imgsLoaded ? <ProjectCarousel currentProjectInfo={currentProject} /> : <h1>Loading</h1>}
                 <div className="project__info column-flex">
                     <div className="info">
                         <h3>{currentProject.name}</h3>
