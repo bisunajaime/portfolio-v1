@@ -18,10 +18,7 @@ function App() {
         loadImage.key = image
         // wait 2 seconds to simulate loading time
         loadImg.onload = () =>
-          setTimeout(() => {
-            resolve(image.url)
-          }, 2000)
-
+          resolve(image.url)
         loadImg.onerror = err => reject(err)
       })
     }
