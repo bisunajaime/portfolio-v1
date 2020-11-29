@@ -122,8 +122,8 @@ const Projects = () => {
         <div className="column-flex">
             {currentProject == null ? null : currentProjectInfo()}
             <div className="projects row-flex width-100">
-                {data['projects'].map((e, i) => <div className="project__item column-flex">
-                    <div className="project__image">
+                {data['projects'].map((e, i) => <div key={e.name} className="project__item column-flex">
+                    <div key={e.name} className="project__image">
                         <img src={e.cover_img} alt={e.name} />
                     </div>
                     <div className="project__description h__auto">
@@ -134,7 +134,7 @@ const Projects = () => {
                         </div>
                         <p>{e.short_description}</p>
                         <ul className="row-flex">
-                            {e.stack.map(tech => <li>{tech}</li>)}
+                            {e.stack.map(tech => <li key={`${e.name}_${tech}`} >{tech}</li>)}
                         </ul>
                     </div>
                 </div>)}
@@ -145,6 +145,33 @@ const Projects = () => {
 
 const ProjectCarousel = props => {
     let { currentProjectInfo } = props
+    const [imgsLoaded, setImgsLoaded] = useState(false)
+
+    // preload project image
+    useEffect(() => {
+        const loadImage = image => {
+            return new Promise((resolve, reject) => {
+                const loadImg = new Image()
+                loadImg.src = image
+                loadImage.key = image
+                // wait 2 seconds to simulate loading time
+                loadImg.onload = () =>
+                    resolve(image.url)
+                loadImg.onerror = err => reject(err)
+            })
+        }
+
+        Promise.all(currentProjectInfo.sample_ui.map((image, index) => {
+            // let length = data.images.length
+            // let currentIndex = index
+            // let p = ((index / length) * 100).toFixed(2)
+            loadImage("https://bisunajaime-portfolio.netlify.app" + image)
+        }))
+            .then(() => {
+                setImgsLoaded(true)
+            })
+            .catch(err => console.log("Failed to load images", err))
+    }, [])
 
     const sliderOptions = {
         pageDots: false,
@@ -156,6 +183,9 @@ const ProjectCarousel = props => {
         setGallerySize: false,
         imagesLoaded: true,
         lazyLoad: true
+    }
+    if (!imgsLoaded) {
+        return <h1>Loading</h1>
     }
     if (currentProjectInfo.sample_ui.length == 1) {
         return <img className="web__demo" src={currentProjectInfo.sample_ui[0]} />
@@ -182,7 +212,7 @@ const TechStack = () => {
                     <h3>Frontend</h3>
                     <ul className="row-flex">
                         {data.techstacks.frontend.stacks.map(e => (
-                            <li>{e}</li>
+                            <li key={`frontend_${e}`}>{e}</li>
                         ))}
                     </ul>
                 </div>
@@ -191,7 +221,7 @@ const TechStack = () => {
                     <h3>Backend</h3>
                     <ul className="row-flex">
                         {data.techstacks.backend.stacks.map(e => (
-                            <li>{e}</li>
+                            <li key={`backend_${e}`}>{e}</li>
                         ))}
                     </ul>
                 </div>
@@ -200,7 +230,7 @@ const TechStack = () => {
                     <h3>Tools</h3>
                     <ul className="row-flex">
                         {data.techstacks.tools.stacks.map(e => (
-                            <li>{e}</li>
+                            <li key={`tools_${e}`}>{e}</li>
                         ))}
                     </ul>
                 </div>
@@ -215,7 +245,7 @@ const HostedEvents = () => {
             <h1 className="light-title">HOSTED EVENTS</h1>
             <div className="hosted__events__items">
                 {data.events.hosted.map(e => (
-                    <div className="hosted__event__item">
+                    <div key={e.name} className="hosted__event__item">
                         <div className="hosted_event_image">
                             <img src={e.cover_img} alt={e.name} />
                         </div>
@@ -236,7 +266,7 @@ const AttendedEvents = () => {
             <h1 className="light-title">ATTENDED EVENTS</h1>
             <div className="hosted__events__items">
                 {data.events.attended.map(e => (
-                    <div className="hosted__event__item">
+                    <div key={e.name} className="hosted__event__item">
                         <div className="hosted_event_image">
                             <img src={e.cover_img} alt={e.name} />
                         </div>
@@ -258,7 +288,7 @@ const Organizations = () => {
             <h1 className="light-title" >ORGANIZATIONS</h1>
             <div className="organizations__list" >
                 {data.organizations.map(e => (
-                    <div className="organization__item column-flex">
+                    <div key={e.name} className="organization__item column-flex">
                         <div className="organization__image">
                             <img src={e.cover_img} alt={e.name} />
                         </div>
