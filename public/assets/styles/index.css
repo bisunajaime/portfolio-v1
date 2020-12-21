@@ -62,8 +62,8 @@
   --white-80: rgba(255, 255, 255, 0.8);
   --white-50: rgba(255, 255, 255, 0.5);
   --black-100: black;
-  --black-80: rgba(0,0,0,0.8);
-  --black-50: rgba(0,0,0,0.5);
+  --black-80: rgba(0, 0, 0, 0.8);
+  --black-50: rgba(0, 0, 0, 0.5);
 }
 
 * {
@@ -251,8 +251,8 @@ section {
       grid-template-columns: repeat(1fr, 2);
   -ms-grid-rows: (2)[1fr];
       grid-template-rows: repeat(1fr, 2);
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(30%, #000), to(rgba(9, 9, 9, 0.527))), url("https://images.unsplash.com/photo-1516259762381-22954d7d3ad2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1966&q=80");
-  background: linear-gradient(0deg, #000 30%, rgba(9, 9, 9, 0.527) 100%), url("https://images.unsplash.com/photo-1516259762381-22954d7d3ad2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1966&q=80");
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(30%, black), to(rgba(0, 0, 0, 0.527))), url("https://images.unsplash.com/photo-1516259762381-22954d7d3ad2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1966&q=80");
+  background: linear-gradient(0deg, black 30%, rgba(0, 0, 0, 0.527) 100%), url("https://images.unsplash.com/photo-1516259762381-22954d7d3ad2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1966&q=80");
   background-position: bottom;
 }
 
@@ -516,10 +516,7 @@ section {
 #projects .demo .selected .details small {
   color: var(--white-80);
   font-size: 1.25em;
-  text-decoration: underline;
-  text-decoration-thickness: 3px;
-  -webkit-text-decoration-color: var(--accent-color-very-light);
-          text-decoration-color: var(--accent-color-very-light);
+  border-bottom: 3px solid;
 }
 
 @media (max-width: 480px) {
@@ -532,6 +529,7 @@ section {
   font-size: 1.8em;
   color: var(--white-100);
   font-weight: bold;
+  padding-top: .25em;
 }
 
 @media (max-width: 480px) {
@@ -622,7 +620,7 @@ section {
   }
 }
 
-@media (max-width: 1025px) {
+@media (max-width: 1025px), (max-width: 1281px) {
   #projects .demo .heads {
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
@@ -637,18 +635,27 @@ section {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  border-radius: 15px;
   background: var(--accent-color);
   cursor: pointer;
+}
+
+@media (max-width: 480px) {
+  #projects .demo .heads .head {
+    border-radius: 10px !important;
+  }
 }
 
 #projects .demo .heads .head .image {
   height: 250px;
   width: 100%;
+  border-radius: 15px;
 }
 
 @media (max-width: 480px) {
   #projects .demo .heads .head .image {
     height: 100px !important;
+    border-radius: 10px;
   }
 }
 
@@ -663,6 +670,13 @@ section {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: 15px;
+}
+
+@media (max-width: 480px) {
+  #projects .demo .heads .head .image img {
+    border-radius: 10px;
+  }
 }
 
 #projects .demo .carousel {
@@ -891,7 +905,7 @@ section {
 
 #organizations .orgs .org h3 {
   color: var(--white-100);
-  padding: .25    em 0;
+  padding: .25 em 0;
   font-weight: bold;
   font-size: 1.3em;
 }

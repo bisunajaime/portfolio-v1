@@ -100,7 +100,7 @@ const ProjectDemo = () => {
                     <img src={process.env.PUBLIC_URL + data.projects[selectedProject].cover_img} alt={data.projects[selectedProject].name} />
                 </div> */}
                 <div className="details">
-                    <small style={{ textDecorationColor: `${data.projects[selectedProject].color}` }}>More about the project</small>
+                    <small style={{ borderBottomColor: `${data.projects[selectedProject].color}` }}>More about the project</small>
                     <h1>{data.projects[selectedProject].name}</h1>
                     <ul>
                         {data.projects[selectedProject].stack.map(e => {
