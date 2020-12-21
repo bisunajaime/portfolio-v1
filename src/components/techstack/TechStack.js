@@ -7,7 +7,25 @@ const TechStack = () => {
                 <small>I use these</small>
                 <h1>Techstack and Tools</h1>
             </div>
-            <div className="stacks">
+            <div className="techs">
+                <div className="tech">
+                    <div className="details">
+                        <h3>Frontend</h3>
+                    </div>
+                    <div className="image">
+                        <img src={data.techstacks.frontend.cover_img} alt="Frontend" />
+                    </div>
+                </div>
+                <div className="tech">
+                    <div className="details">
+                        <h3>Backend</h3>
+                    </div>
+                    <div className="image">
+                        <img src={data.techstacks.backend.cover_img} alt="Frontend" />
+                    </div>
+                </div>
+            </div>
+            {/* <div className="stacks">
                 <div className="stack">
                     <div className="image">
                         <img src={data.techstacks.frontend.cover_img} alt="Frontend" />
@@ -51,7 +69,7 @@ const TechStack = () => {
                         </ul>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </section>
     )
 }

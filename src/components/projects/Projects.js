@@ -1,5 +1,7 @@
 import { useRef, useState, useEffect } from 'react';
+import ReactDOM from 'react-dom'
 import data from '../../content.json'
+import ImagesLoaded from 'react-images-loaded';
 import Flickity from 'react-flickity-component'
 import '../../lib_css/flickity.css'
 import '../../lib_css/fullscreen.css'
@@ -21,6 +23,7 @@ const Projects = () => {
 const ProjectDemo = () => {
     const [selectedProject, setSelectedProject] = useState(0)
     const [imgsLoaded, setImgsLoaded] = useState(false)
+    const [perspective, setPerspective] = useState("rotateX(0deg) rotateY(0deg)")
     const sliderOptions = {
         pageDots: false,
         cellAlign: 'center',
@@ -60,7 +63,7 @@ const ProjectDemo = () => {
 
     return (
         <div className="demo">
-            <div className='heads'>
+            <div id="heads" className='heads'>
                 {data.projects.map((e, i) => {
                     return (<a href="#showcase" onClick={() => setSelectedProject(i)} className="head">
                         <div className="image">
@@ -93,12 +96,6 @@ const ProjectDemo = () => {
 
             </div>
             <div className="selected">
-                {/* <div className="image">
-                    <img src={process.env.PUBLIC_URL + data.projects[selectedProject].cover_img} alt={data.projects[selectedProject].name} />
-                </div> */}
-                {/* <div className="image">
-                    <img src={process.env.PUBLIC_URL + data.projects[selectedProject].cover_img} alt={data.projects[selectedProject].name} />
-                </div> */}
                 <div className="details">
                     <small style={{ borderBottomColor: `${data.projects[selectedProject].color}` }}>More about the project</small>
                     <h1>{data.projects[selectedProject].name}</h1>
