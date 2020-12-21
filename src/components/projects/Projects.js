@@ -82,17 +82,6 @@ const ProjectDemo = () => {
                 >
                     {data.projects[selectedProject].sample_ui.map((e, i) => <img key={`${data.projects[selectedProject].name}_${i}`} alt={data.projects[selectedProject].name} data-flickity-lazyload={process.env.PUBLIC_URL + e} src={process.env.PUBLIC_URL + "/assets/images/loading.png"} className="" />)}
                 </Flickity>
-                {/* <Slider
-                    {...settings}
-                    arrows={false}
-                    className="project"
-                    // variableWidth={true}
-                    responsive={[
-
-                    ]}
-                >
-                    {data.projects[selectedProject].sample_ui.map((e, i) => <div><img key={`${data.projects[selectedProject].name}_${i}`} alt={data.projects[selectedProject].name} src={process.env.PUBLIC_URL + e} className="" /></div>)}
-                </Slider> */}
 
             </div>
             <div className="selected">

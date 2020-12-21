@@ -9,19 +9,40 @@ const TechStack = () => {
             </div>
             <div className="techs">
                 <div className="tech">
+                    <div className="image frontend"></div>
                     <div className="details">
-                        <h3>Frontend</h3>
-                    </div>
-                    <div className="image">
-                        <img src={data.techstacks.frontend.cover_img} alt="Frontend" />
+                        <h3>Frontend Development</h3>
+                        <ul>
+                            {data.techstacks.frontend.stacks.map(e => {
+                                return (
+                                    <li>{e}</li>
+                                )
+                            })}
+                        </ul>
                     </div>
                 </div>
                 <div className="tech">
+                    <div className="image backend"></div>
                     <div className="details">
-                        <h3>Backend</h3>
+                        <h3>Backend Development</h3><ul>
+                            {data.techstacks.backend.stacks.map(e => {
+                                return (
+                                    <li>{e}</li>
+                                )
+                            })}
+                        </ul>
                     </div>
-                    <div className="image">
-                        <img src={data.techstacks.backend.cover_img} alt="Frontend" />
+                </div>
+                <div className="tech">
+                    <div className="image tools"></div>
+                    <div className="details">
+                        <h3>Tools and Frameworks</h3><ul>
+                            {data.techstacks.tools.stacks.map(e => {
+                                return (
+                                    <li>{e}</li>
+                                )
+                            })}
+                        </ul>
                     </div>
                 </div>
             </div>
