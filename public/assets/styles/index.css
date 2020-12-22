@@ -138,7 +138,7 @@ section {
 @media (max-width: 480px), (max-width: 1025px) {
   .label {
     padding: 1em 0 1em 0;
-    max-width: 80%;
+    max-width: 90%;
   }
 }
 
@@ -304,7 +304,7 @@ section {
 
 @media (max-width: 480px), (max-width: 1025px) {
   #about .content {
-    max-width: 80%;
+    max-width: 90%;
     margin: auto;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -366,7 +366,7 @@ section {
 @media (max-width: 480px) {
   #about .content span {
     font-size: 1em !important;
-    max-width: 80%;
+    max-width: 90%;
   }
 }
 
@@ -385,7 +385,7 @@ section {
 #about .content p {
   color: var(--white-50);
   font-size: 1.2em;
-  max-width: 80%;
+  max-width: 90%;
 }
 
 @media (max-width: 480px) {
@@ -475,7 +475,7 @@ section {
 
 @media (max-width: 480px), (max-width: 1025px) {
   #projects .demo .selected {
-    max-width: 80%;
+    max-width: 90%;
     padding: 0;
   }
 }
@@ -652,7 +652,7 @@ section {
   #projects .demo .heads {
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
-    max-width: 80%;
+    max-width: 90%;
   }
 }
 
@@ -759,13 +759,13 @@ section {
   #techstack .techs {
     -ms-grid-columns: (1fr)[1] !important;
         grid-template-columns: repeat(1, 1fr) !important;
-    max-width: 80%;
+    max-width: 90%;
   }
 }
 
 @media (max-width: 1024px) {
   #techstack .techs {
-    max-width: 80%;
+    max-width: 90%;
   }
 }
 
@@ -885,7 +885,7 @@ section {
 
 @media (max-width: 480px), (max-width: 600px), (max-width: 801px) {
   #techstack .stacks {
-    max-width: 80%;
+    max-width: 90%;
     -ms-grid-columns: (1fr)[1] !important;
         grid-template-columns: repeat(1, 1fr) !important;
   }
@@ -893,7 +893,7 @@ section {
 
 @media (max-width: 1025px) {
   #techstack .stacks {
-    max-width: 80%;
+    max-width: 90%;
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
   }
@@ -971,7 +971,7 @@ section {
             flex-direction: column;
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
-    max-width: 80%;
+    max-width: 90%;
   }
 }
 
@@ -979,7 +979,7 @@ section {
   .eventslist .events {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
-    max-width: 80%;
+    max-width: 90%;
   }
 }
 
@@ -1035,7 +1035,7 @@ section {
 
 @media (max-width: 480px), (max-width: 600px), (max-width: 801px) {
   #organizations .orgs {
-    max-width: 80%;
+    max-width: 90%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1048,7 +1048,7 @@ section {
 
 @media (max-width: 1025px) {
   #organizations .orgs {
-    max-width: 80% !important;
+    max-width: 90% !important;
   }
 }
 

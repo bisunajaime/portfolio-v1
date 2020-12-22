@@ -33,7 +33,8 @@ const ProjectDemo = () => {
         prevNextButtons: false,
         setGallerySize: false,
         imagesLoaded: true,
-        lazyLoad: true
+        lazyLoad: true,
+        groupCells: '50%'
     }
 
     useEffect(() => {
