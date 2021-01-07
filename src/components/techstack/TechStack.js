@@ -45,6 +45,18 @@ const TechStack = () => {
                         </ul>
                     </div>
                 </div>
+                <div className="tech">
+                    <div className="image ui"></div>
+                    <div className="details">
+                        <h3>UI/UX Design</h3><ul>
+                            {data.techstacks.ui.stacks.map(e => {
+                                return (
+                                    <li>{e}</li>
+                                )
+                            })}
+                        </ul>
+                    </div>
+                </div>
             </div>
             {/* <div className="stacks">
                 <div className="stack">

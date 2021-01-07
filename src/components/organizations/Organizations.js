@@ -13,7 +13,7 @@ const Organisations = () => {
                         <img src={process.env.PUBLIC_URL + e.cover_img} alt={e.name} />
                         <div className="details">
                             <h3>{e.name}</h3>
-                            <p> {e.acronym}- {e.department}</p>
+                            <p>{e.department}</p>
                             <p>{e.year}</p>
                         </div>
                     </div>)

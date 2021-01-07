@@ -61,12 +61,13 @@ const ProjectDemo = () => {
             })
             .catch(err => console.log("Failed to load images", err))
     }, [selectedProject])
-
     return (
         <div className="demo">
             <div id="heads" className='heads'>
                 {data.projects.map((e, i) => {
-                    return (<a href="#showcase" onClick={() => setSelectedProject(i)} className="head">
+                    return (<a href="#showcase" onClick={async () => {
+                        setSelectedProject(i)
+                    }} className="head">
                         <div className="image">
                             <img src={process.env.PUBLIC_URL + e.cover_img} />
                         </div>
@@ -79,7 +80,7 @@ const ProjectDemo = () => {
                     elementType="div"
                     options={sliderOptions}
                     reloadOnUpdate={true}
-                    key={data.projects[7].name}
+                    key={data.projects[selectedProject].name}
                 >
                     {data.projects[selectedProject].sample_ui.map((e, i) => <img key={`${data.projects[selectedProject].name}_${i}`} alt={data.projects[selectedProject].name} data-flickity-lazyload={process.env.PUBLIC_URL + e} src={process.env.PUBLIC_URL + "/assets/images/loading.png"} className="" />)}
                 </Flickity>

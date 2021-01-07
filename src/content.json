@@ -189,6 +189,13 @@
                 "ASP.NET",
                 "ASP.NET Core"
             ]
+        },
+        "ui": {
+            "cover_img": "https://images.unsplash.com/photo-1547027072-332f09bd6bb3?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80",
+            "stacks": [
+                "Figma",
+                "AdobeXD"
+            ]
         }
     },
     "projects": [
@@ -200,7 +207,7 @@
                 "Flutter",
                 "Laravel"
             ],
-            "learnings": "In this project, I learned so much such as authentication, single sign on, REST API, using libraries, night mode implementation, and so much more.",
+            "learnings": "In this project, I learned authentication, single sign on, REST API, using libraries, night mode implementation, and so much more.",
             "cover_img": "/assets/images/needl/needl_patient_cover.png",
             "sample_ui": [
                 "/assets/images/needl/patient/login.png",
@@ -427,14 +434,14 @@
             "acronym": "AIM",
             "cover_img": "/assets/images/orgs/aim.png",
             "department": "Operations Department",
-            "year": "2018-2019"
+            "year": "2018 - 2019"
         },
         {
             "name": "Developer Students Club CSB",
             "acronym": "DSC",
             "cover_img": "/assets/images/orgs/dsc.png",
             "department": "Research and Development Department",
-            "year": "2019-2020"
+            "year": "2019 - 2020"
         }
     ],
     "icons": {

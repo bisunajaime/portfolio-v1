@@ -3,7 +3,7 @@ const Contact = () => {
         <section id="contact">
             <div className="label">
                 <small>Have any projects?</small>
-                <h1>Lets get in touch</h1>
+                <h1>Let's get in touch</h1>
             </div>
         </section>
     )
