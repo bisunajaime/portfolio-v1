@@ -426,6 +426,26 @@
             "git_url": "https://codepen.io/CambooBabbage/pen/VwaZPXp",
             "demo_app": "",
             "color": "#bdfec1"
+        },
+        {
+            "name": "QR.me",
+            "description": "Continue browsing on your phone from your desktop, or share with friends what you're browsing. QR.me allows you to generate a qr code from your current website and scan it to continue browsing from your mobile device.",
+            "short_description": "None",
+            "stack": [
+                "HTML",
+                "CSS",
+                "JS"
+            ],
+            "learnings": "In this project I was able to learn how to build browser extensions for firefox.",
+            "cover_img": "/assets/images/qrme/qrme_cover.svg",
+            "sample_ui": [
+                "/assets/images/qrme/QRme_demo_first.png"
+            ],
+            "demo_video": "",
+            "git_url": "",
+            "demo_app": "",
+            "demo_url": "https://addons.mozilla.org/en-US/firefox/addon/qr-me/",
+            "color": "#fff"
         }
     ],
     "organizations": [
