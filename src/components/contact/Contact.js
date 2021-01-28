@@ -14,10 +14,8 @@ const Contact = () => {
                 </div>
                 <div className="fields">
                     <label id="subject">Subject</label>
-                    <small>Let me know what you want to talk about.</small>
                     <input type="text" formEncType="text/plain" id="subject" name="subject" placeholder="Subject" onChange={e => setSubject(e.target.value)} />
                     <label id="message">Message</label>
-                    <small>The subject, but with more detail.</small>
                     <textarea rows="10" placeholder="Your message" id="message" onChange={e => setBody(e.target.value)} >
 
                     </textarea>
