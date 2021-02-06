@@ -339,6 +339,30 @@
             "demo_app": "",
             "demo_url": "https://addons.mozilla.org/en-US/firefox/addon/qr-me/",
             "color": "#fff"
+        },
+        {
+            "name": "Hlobe@Gome",
+            "description": "Mobile app to interface information such as download/upload speed, consumption, usage, as well as connected devices from Huawei based rouers such as Globe@Home.",
+            "short_description": "None",
+            "stack": [
+                "React Native"
+            ],
+            "learnings": "In this project I was able to learn how to build browser extensions for firefox.",
+            "cover_img": "/assets/images/hlobeatgome/hlobeatgome_cover.png",
+            "sample_ui": [
+                "/assets/images/hlobeatgome/first.png",
+                "/assets/images/hlobeatgome/second.png",
+                "/assets/images/hlobeatgome/third.png",
+                "/assets/images/hlobeatgome/fourth.png",
+                "/assets/images/hlobeatgome/fifth.png",
+                "/assets/images/hlobeatgome/sixth.png",
+                "/assets/images/hlobeatgome/seventh.png"
+            ],
+            "demo_video": "",
+            "git_url": "",
+            "demo_app": "",
+            "demo_url": "https://github.com/jose-bamboo",
+            "color": "#83B4FF"
         }
     ],
     "organizations": [
