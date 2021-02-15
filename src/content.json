@@ -57,8 +57,8 @@
             "cover_img": "https://images.unsplash.com/photo-1514070706115-47c142769603?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1929&q=80",
             "stacks": [
                 "C#",
-                "PHP",
                 "Java",
+                "PHP",
                 "MySQL",
                 "MSSQL",
                 "Firebase"
@@ -74,13 +74,15 @@
                 "Android",
                 "React",
                 "React Native",
-                "Flutter",
+                "Flutter/Dart",
                 "RESTful API",
                 "Laravel",
                 "Node",
                 "Express",
-                "ASP.NET",
-                "ASP.NET Core"
+                "Spring Boot",
+                "JPA",
+                "Maven",
+                "Hibernate"
             ]
         },
         "ui": {
