@@ -56,9 +56,9 @@
         "backend": {
             "cover_img": "https://images.unsplash.com/photo-1514070706115-47c142769603?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1929&q=80",
             "stacks": [
-                "C#",
                 "Java",
                 "PHP",
+                "C#",
                 "MySQL",
                 "MSSQL",
                 "Firebase"
@@ -67,10 +67,10 @@
         "tools": {
             "cover_img": "https://wallpapercave.com/wp/wp3929762.jpg",
             "stacks": [
+                "Git",
                 "Github",
                 "Heroku",
                 "Netlify",
-                "Wordpress",
                 "Android",
                 "React",
                 "React Native",
