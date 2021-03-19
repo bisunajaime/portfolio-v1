@@ -18,7 +18,7 @@ const AboutMe = () => {
                     <a href="https://github.com/jose-bamboo" target="_blank"><FontAwesomeIcon icon={faGithubSquare} className="icon" color="white" /></a>
                     <a href="https://twitter.com/lamboo_cetteuce" target="_blank"><FontAwesomeIcon icon={faTwitterSquare} className="icon" color="white" /></a>
                 </div>
-                <a href={process.env.PUBLIC_URL + "/files/JoseJaimeBisunaResume.pdf"} target="_blank">Find my resume here.</a>
+                <a id="resume" href={process.env.PUBLIC_URL + "/files/JoseJaimeBisunaResume.pdf"} target="_blank">Find my resume here.</a>
             </div>
         </section>
     )

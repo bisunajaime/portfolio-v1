@@ -19,7 +19,7 @@ const Contact = () => {
                     <textarea rows="10" placeholder="Your message" id="message" onChange={e => setBody(e.target.value)} >
 
                     </textarea>
-                    <a href={`mailto:bisunajaime@gmail.com?subject=${subject}&body=${body}`}>Send</a>
+                    <a href={`mailto:bisunajaime@gmail.com?subject=${subject}&body=${body}`}>Send E-Mail</a>
                 </div>
             </div>
         </section>

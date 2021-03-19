@@ -67,7 +67,7 @@ const ProjectDemo = () => {
                 {data.projects.map((e, i) => {
                     return (<a href="#showcase" onClick={async () => {
                         setSelectedProject(i)
-                    }} className="head">
+                    }} className="head" data-color={e.color}>
                         <div className="image">
                             <img src={process.env.PUBLIC_URL + e.cover_img} />
                         </div>
@@ -87,7 +87,7 @@ const ProjectDemo = () => {
 
             </div>
             <div className="selected">
-                <div className="details">
+                <div className="details" style={{ border: `1.5px solid ${data.projects[selectedProject].color}`, boxShadow: `-10px 10px 0 ${data.projects[selectedProject].color}` }}>
                     <small style={{ borderBottomColor: `${data.projects[selectedProject].color}` }}>More about the project</small>
                     <h1>{data.projects[selectedProject].name}</h1>
                     <ul>
