@@ -12,7 +12,7 @@ const AttendedEvents = () => {
                     return (
                         <div className="event">
                             <div className="image">
-                                <img src={e.cover_img} alt={e.name} />
+                                <img className="hide-shadow" src={e.cover_img} alt={e.name} />
                             </div>
                             <div className="details">
                                 <h3>{e.name}</h3>

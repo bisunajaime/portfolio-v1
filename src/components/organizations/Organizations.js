@@ -10,7 +10,7 @@ const Organisations = () => {
             <div className="orgs">
                 {data.organizations.map(e => {
                     return (<div className="org">
-                        <img src={process.env.PUBLIC_URL + e.cover_img} alt={e.name} />
+                        <img className="hide-shadow" src={process.env.PUBLIC_URL + e.cover_img} alt={e.name} />
                         <div className="details">
                             <h3>{e.name}</h3>
                             <p>{e.department}</p>

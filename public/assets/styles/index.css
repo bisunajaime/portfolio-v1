@@ -415,10 +415,10 @@ section {
   background: black;
   font-weight: bold;
   color: white;
-  -webkit-transition: background .1s ease, color .1s ease, -webkit-box-shadow .1s ease, -webkit-transform .1s ease;
-  transition: background .1s ease, color .1s ease, -webkit-box-shadow .1s ease, -webkit-transform .1s ease;
-  transition: background .1s ease, box-shadow .1s ease, transform .1s ease, color .1s ease;
-  transition: background .1s ease, box-shadow .1s ease, transform .1s ease, color .1s ease, -webkit-box-shadow .1s ease, -webkit-transform .1s ease;
+  -webkit-transition: background .1s ease, color .1s ease, -webkit-box-shadow .1s ease, -webkit-transform .1s ease;
+  transition: background .1s ease, color .1s ease, -webkit-box-shadow .1s ease, -webkit-transform .1s ease;
+  transition: background .1s ease, box-shadow .1s ease, transform .1s ease, color .1s ease;
+  transition: background .1s ease, box-shadow .1s ease, transform .1s ease, color .1s ease, -webkit-box-shadow .1s ease, -webkit-transform .1s ease;
 }
 
 #about .content #resume:hover {
@@ -529,10 +529,10 @@ section {
           box-shadow: -10px 10px 0 var(--accent-color-dark);
   -webkit-transform: translate(5px, -5px);
           transform: translate(5px, -5px);
-  -webkit-transition: background .1s ease, color .1s ease, -webkit-box-shadow .1s ease, -webkit-transform .1s ease;
-  transition: background .1s ease, color .1s ease, -webkit-box-shadow .1s ease, -webkit-transform .1s ease;
-  transition: background .1s ease, box-shadow .1s ease, transform .1s ease, color .1s ease;
-  transition: background .1s ease, box-shadow .1s ease, transform .1s ease, color .1s ease, -webkit-box-shadow .1s ease, -webkit-transform .1s ease;
+  -webkit-transition: background .1s ease, color .1s ease, -webkit-box-shadow .1s ease, -webkit-transform .1s ease;
+  transition: background .1s ease, color .1s ease, -webkit-box-shadow .1s ease, -webkit-transform .1s ease;
+  transition: background .1s ease, box-shadow .1s ease, transform .1s ease, color .1s ease;
+  transition: background .1s ease, box-shadow .1s ease, transform .1s ease, color .1s ease, -webkit-box-shadow .1s ease, -webkit-transform .1s ease;
 }
 
 #projects .demo .selected .details:hover {
@@ -693,10 +693,10 @@ section {
   border-radius: 15px;
   background: transparent;
   cursor: pointer;
-  -webkit-transition: background .1s ease, color .1s ease, border .1s ease, -webkit-box-shadow .1s ease, -webkit-transform .1s ease;
-  transition: background .1s ease, color .1s ease, border .1s ease, -webkit-box-shadow .1s ease, -webkit-transform .1s ease;
-  transition: background .1s ease, box-shadow .1s ease, transform .1s ease, color .1s ease, border .1s ease;
-  transition: background .1s ease, box-shadow .1s ease, transform .1s ease, color .1s ease, border .1s ease, -webkit-box-shadow .1s ease, -webkit-transform .1s ease;
+  -webkit-transition: background .1s ease, color .1s ease, border .1s ease, -webkit-box-shadow .1s ease, -webkit-transform .1s ease;
+  transition: background .1s ease, color .1s ease, border .1s ease, -webkit-box-shadow .1s ease, -webkit-transform .1s ease;
+  transition: background .1s ease, box-shadow .1s ease, transform .1s ease, color .1s ease, border .1s ease;
+  transition: background .1s ease, box-shadow .1s ease, transform .1s ease, color .1s ease, border .1s ease, -webkit-box-shadow .1s ease, -webkit-transform .1s ease;
 }
 
 #projects .demo .heads .head:hover {
@@ -808,10 +808,10 @@ section {
   border: 2px solid #353535;
   -webkit-box-shadow: 0 0 0 var(--accent-color-dark);
           box-shadow: 0 0 0 var(--accent-color-dark);
-  -webkit-transition: background .1s ease, border .1s ease, color .1s ease, -webkit-box-shadow .1s ease, -webkit-transform .1s ease;
-  transition: background .1s ease, border .1s ease, color .1s ease, -webkit-box-shadow .1s ease, -webkit-transform .1s ease;
-  transition: background .1s ease, border .1s ease, box-shadow .1s ease, transform .1s ease, color .1s ease;
-  transition: background .1s ease, border .1s ease, box-shadow .1s ease, transform .1s ease, color .1s ease, -webkit-box-shadow .1s ease, -webkit-transform .1s ease;
+  -webkit-transition: background .1s ease, border .1s ease, color .1s ease, -webkit-box-shadow .1s ease, -webkit-transform .1s ease;
+  transition: background .1s ease, border .1s ease, color .1s ease, -webkit-box-shadow .1s ease, -webkit-transform .1s ease;
+  transition: background .1s ease, border .1s ease, box-shadow .1s ease, transform .1s ease, color .1s ease;
+  transition: background .1s ease, border .1s ease, box-shadow .1s ease, transform .1s ease, color .1s ease, -webkit-box-shadow .1s ease, -webkit-transform .1s ease;
 }
 
 #techstack .techs .tech:hover {
@@ -1139,6 +1139,7 @@ section {
 #organizations .orgs .org p {
   color: var(--white-80);
   font-family: var(--roboto);
+  font-weight: 300;
 }
 
 #contact {
@@ -1248,6 +1249,8 @@ section {
   color: white;
   font-family: var(--roboto);
   font-weight: bold;
+  font-size: 1.2em;
+  padding-bottom: .5em;
 }
 
 #contact .form .fields small {
@@ -1261,9 +1264,10 @@ section {
   width: 100%;
   font-family: var(--roboto);
   padding: 1em;
+  font-size: 1.2em;
   border-radius: 0px;
-  border: 1px solid var(--white-80);
-  background: #353535;
+  border: 1.5px solid var(--white-80);
+  background: #1f1f1f;
   color: var(--white-80);
   margin-bottom: .5em;
   outline: none;
@@ -1296,18 +1300,18 @@ section {
   padding: 1em 2.5em;
   border-radius: 0;
   background: var(--black-100);
-  border: 3px solid var(--accent-color-dark);
-  -webkit-box-shadow: -5px 5px 0 var(--accent-color-dark);
-          box-shadow: -5px 5px 0 var(--accent-color-dark);
+  border: 2px solid #ffba24;
+  -webkit-box-shadow: -8px 8px 0 #ffba24;
+          box-shadow: -8px 8px 0 #ffba24;
   -webkit-transform: translate(5px, -5px);
           transform: translate(5px, -5px);
   margin-top: 16px;
   font-weight: bold;
   font-size: 18px;
-  -webkit-transition: background .1s ease, color .1s ease, -webkit-box-shadow .1s ease, -webkit-transform .1s ease;
-  transition: background .1s ease, color .1s ease, -webkit-box-shadow .1s ease, -webkit-transform .1s ease;
-  transition: background .1s ease, box-shadow .1s ease, transform .1s ease, color .1s ease;
-  transition: background .1s ease, box-shadow .1s ease, transform .1s ease, color .1s ease, -webkit-box-shadow .1s ease, -webkit-transform .1s ease;
+  -webkit-transition: background .1s ease, color .1s ease, -webkit-box-shadow .1s ease, -webkit-transform .1s ease;
+  transition: background .1s ease, color .1s ease, -webkit-box-shadow .1s ease, -webkit-transform .1s ease;
+  transition: background .1s ease, box-shadow .1s ease, transform .1s ease, color .1s ease;
+  transition: background .1s ease, box-shadow .1s ease, transform .1s ease, color .1s ease, -webkit-box-shadow .1s ease, -webkit-transform .1s ease;
   width: 100%;
   text-align: center;
 }
@@ -1345,5 +1349,41 @@ section {
 .carousel-cell-image.flickity-lazyloaded,
 .carousel-cell-image.flickity-lazyerror {
   opacity: 1;
+}
+
+.show-shadow {
+  -webkit-transform: translate(-5px, 5px);
+          transform: translate(-5px, 5px);
+  -webkit-box-shadow: -10px 10px 0 var(--accent-color-dark);
+          box-shadow: -10px 10px 0 var(--accent-color-dark);
+  -webkit-transition: background .1s ease, color .1s ease, -webkit-box-shadow .1s ease, -webkit-transform .1s ease;
+  transition: background .1s ease, color .1s ease, -webkit-box-shadow .1s ease, -webkit-transform .1s ease;
+  transition: background .1s ease, box-shadow .1s ease, transform .1s ease, color .1s ease;
+  transition: background .1s ease, box-shadow .1s ease, transform .1s ease, color .1s ease, -webkit-box-shadow .1s ease, -webkit-transform .1s ease;
+}
+
+.show-shadow:hover {
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+  -webkit-box-shadow: 0 0 0 var(--accent-color-dark);
+          box-shadow: 0 0 0 var(--accent-color-dark);
+}
+
+.hide-shadow {
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+  -webkit-box-shadow: 0 0 0 var(--accent-color-dark);
+          box-shadow: 0 0 0 var(--accent-color-dark);
+  -webkit-transition: background .1s ease, color .1s ease, border .1s ease, -webkit-box-shadow .1s ease, -webkit-transform .1s ease;
+  transition: background .1s ease, color .1s ease, border .1s ease, -webkit-box-shadow .1s ease, -webkit-transform .1s ease;
+  transition: background .1s ease, box-shadow .1s ease, transform .1s ease, color .1s ease, border .1s ease;
+  transition: background .1s ease, box-shadow .1s ease, transform .1s ease, color .1s ease, border .1s ease, -webkit-box-shadow .1s ease, -webkit-transform .1s ease;
+}
+
+.hide-shadow:hover:hover {
+  -webkit-transform: translate(3px, -3px);
+          transform: translate(3px, -3px);
+  -webkit-box-shadow: -5px 5px 0 var(--accent-color-dark);
+          box-shadow: -5px 5px 0 var(--accent-color-dark);
 }
 /*# sourceMappingURL=index.css.map */
